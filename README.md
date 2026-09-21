@@ -5,23 +5,6 @@ the enacted codes of 24 federally recognized Tribal Nations, and for the experim
 how much of the apparent cross-jurisdictional signal in such a corpus is source-document
 memorization.
 
-## The finding, in one paragraph
-
-Multi-jurisdictional corpora arrive as source documents, one or a few per jurisdiction. The
-jurisdiction label is then constant within a document, documents are individually recognizable
-from surface form, and a random split over passages puts the same document on both sides of the
-partition. A model can score well by recognizing the document and reading the label off it. On
-this corpus a Nation-identification probe reaches 0.697 macro-F1 under a random split and 0.139
-with source documents held out, against a permutation null of 0.065.
-
-Before trusting a random split, run the diagnostic: within each group sharing the label of
-interest, train a classifier to identify which source document a passage came from. Here it
-reaches 0.858 macro-F1. It costs one linear model and needs no held-out data.
-
-```
-python src/exp_doc_probe.py --corpus data/processed/corpus.jsonl
-```
-
 ## Layout
 
 ```
