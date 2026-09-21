@@ -1,0 +1,85 @@
+{
+ "overall_mean": 0.8582086220661655,
+ "differ_mean": 0.9625880579612855,
+ "differ_n": 7,
+ "same_mean": 0.7120774118129973,
+ "same_n": 5,
+ "same_at_degenerate": [
+  "Ponca Tribe of Nebraska",
+  "Zuni Tribe"
+ ],
+ "per_nation": {
+  "Crow Tribe of Montana": {
+   "score": 1.0,
+   "n_docs": 2,
+   "domains_differ": true,
+   "degenerate": 0.3333333333333333
+  },
+  "Dry Creek Rancheria Band of Pomo Indians": {
+   "score": 0.9352245862884161,
+   "n_docs": 2,
+   "domains_differ": true,
+   "degenerate": 0.3333333333333333
+  },
+  "Ho-Chunk Nation of Wisconsin": {
+   "score": 0.9770764641230962,
+   "n_docs": 2,
+   "domains_differ": true,
+   "degenerate": 0.3333333333333333
+  },
+  "Hoh Indian Tribe": {
+   "score": 0.9488095238095238,
+   "n_docs": 2,
+   "domains_differ": true,
+   "degenerate": 0.3333333333333333
+  },
+  "Iowa Tribe of Oklahoma": {
+   "score": 0.9751512532411408,
+   "n_docs": 2,
+   "domains_differ": true,
+   "degenerate": 0.3333333333333333
+  },
+  "Nez Perce Tribe": {
+   "score": 0.9134136546184739,
+   "n_docs": 2,
+   "domains_differ": false,
+   "degenerate": 0.3333333333333333
+  },
+  "Ponca Tribe of Nebraska": {
+   "score": 0.324468085106383,
+   "n_docs": 2,
+   "domains_differ": false,
+   "degenerate": 0.3333333333333333
+  },
+  "Reno-Sparks Indian Colony": {
+   "score": 0.9572112016930712,
+   "n_docs": 2,
+   "domains_differ": false,
+   "degenerate": 0.3333333333333333
+  },
+  "Sac & Fox Nation": {
+   "score": 0.9652941176470589,
+   "n_docs": 2,
+   "domains_differ": false,
+   "degenerate": 0.3333333333333333
+  },
+  "Salt River Pima-Maricopa Indian Community": {
+   "score": 0.9924112607099143,
+   "n_docs": 2,
+   "domains_differ": true,
+   "degenerate": 0.3333333333333333
+  },
+  "Wyandotte Nation": {
+   "score": 0.9094433175569079,
+   "n_docs": 3,
+   "domains_differ": true,
+   "degenerate": 0.16666666666666666
+  },
+  "Zuni Tribe": {
+   "score": 0.4,
+   "n_docs": 2,
+   "domains_differ": false,
+   "degenerate": 0.3333333333333333
+  }
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "composition": {
+  "criminal": {
+   "both": 181,
+   "substantive": 1290,
+   "procedural": 518,
+   "unmarked": 12
+  },
+  "civil": {
+   "procedural": 2568,
+   "unmarked": 5
+  }
+ },
+ "adoption": {
+  "all": {
+   "civil_n": 44,
+   "civil_tot": 2573,
+   "criminal_n": 7,
+   "criminal_tot": 2001,
+   "civil_rate": 0.017100660707345512,
+   "criminal_rate": 0.0034982508745627187,
+   "civil_nations": 10,
+   "criminal_nations": 5,
+   "odds_ratio": 4.955996158843134,
+   "p": 5.832282557013009e-06
+  },
+  "no_oklahoma": {
+   "civil_n": 17,
+   "civil_tot": 1013,
+   "criminal_n": 6,
+   "criminal_tot": 1424,
+   "civil_rate": 0.01678183613030602,
+   "criminal_rate": 0.004213483146067416,
+   "civil_nations": 6,
+   "criminal_nations": 4,
+   "odds_ratio": 4.03380187416332,
+   "p": 0.0022304152726803444
+  },
+  "procedural_only": {
+   "civil_n": 44,
+   "civil_tot": 2573,
+   "criminal_n": 4,
+   "criminal_tot": 518,
+   "civil_rate": 0.017100660707345512,
+   "criminal_rate": 0.007722007722007722,
+   "civil_nations": 10,
+   "criminal_nations": 3,
+   "odds_ratio": 2.23566627125346,
+   "p": 0.16933902983328666
+  }
+ },
+ "reuse": {
+  "all": {
+   "delta": 0.13466251676439808,
+   "ci": [
+    0.051863200333945016,
+    0.22132172614523646
+   ],
+   "p": 0.015649217539123045,
+   "n_nations": 10,
+   "n_criminal": 2001
+  },
+  "procedural_only": {
+   "delta": 0.07687332681615386,
+   "ci": [
+    -0.04360565557374067,
+    0.19920882686338523
+   ],
+   "p": 0.3833808309584521,
+   "n_nations": 5,
+   "n_criminal": 518
+  }
+ }
+}

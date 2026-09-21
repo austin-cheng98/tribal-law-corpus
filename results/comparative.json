@@ -1,0 +1,166 @@
+[
+ {
+  "feature": "silver",
+  "n_nations": 10,
+  "subsample_n": 27,
+  "mean_jsd_criminal": 0.15384877608603859,
+  "mean_jsd_civil": 0.0936070742307937,
+  "civil_minus_criminal": -0.060241701855244884,
+  "p_signflip": 0.001953125,
+  "p_floor": 0.001953125,
+  "n_nations_signflip": 10,
+  "boot_ci": [
+   -0.10237439379129673,
+   -0.005944146187075297
+  ],
+  "n_pairs": 45,
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Iowa Tribe of Oklahoma",
+   "Pawnee Nation of Oklahoma",
+   "Sac & Fox Nation",
+   "Salt River Pima-Maricopa Indian Community",
+   "Wyandotte Nation",
+   "Zuni Tribe"
+  ],
+  "condition": "all provisions"
+ },
+ {
+  "feature": "modality_1",
+  "n_nations": 10,
+  "subsample_n": 27,
+  "mean_jsd_criminal": 0.17842725184165,
+  "mean_jsd_civil": 0.047115490632508875,
+  "civil_minus_criminal": -0.13131176120914112,
+  "p_signflip": 0.001953125,
+  "p_floor": 0.001953125,
+  "n_nations_signflip": 10,
+  "boot_ci": [
+   -0.18493412463155,
+   -0.055654651953595966
+  ],
+  "n_pairs": 45,
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Iowa Tribe of Oklahoma",
+   "Pawnee Nation of Oklahoma",
+   "Sac & Fox Nation",
+   "Salt River Pima-Maricopa Indian Community",
+   "Wyandotte Nation",
+   "Zuni Tribe"
+  ],
+  "condition": "all provisions"
+ },
+ {
+  "feature": "silver",
+  "n_nations": 9,
+  "subsample_n": 29,
+  "mean_jsd_criminal": 0.16306973000545508,
+  "mean_jsd_civil": 0.09205600818528606,
+  "civil_minus_criminal": -0.07101372182016902,
+  "p_signflip": 0.00390625,
+  "p_floor": 0.00390625,
+  "n_nations_signflip": 9,
+  "boot_ci": [
+   -0.11722234761271817,
+   -0.009351665216162694
+  ],
+  "n_pairs": 36,
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Pawnee Nation of Oklahoma",
+   "Sac & Fox Nation",
+   "Salt River Pima-Maricopa Indian Community",
+   "Wyandotte Nation",
+   "Zuni Tribe"
+  ],
+  "condition": "near-duplicates removed"
+ },
+ {
+  "feature": "modality_1",
+  "n_nations": 9,
+  "subsample_n": 29,
+  "mean_jsd_criminal": 0.16950187857906027,
+  "mean_jsd_civil": 0.04634149447261829,
+  "civil_minus_criminal": -0.12316038410644198,
+  "p_signflip": 0.00390625,
+  "p_floor": 0.00390625,
+  "n_nations_signflip": 9,
+  "boot_ci": [
+   -0.18900264959620774,
+   -0.02516723708123058
+  ],
+  "n_pairs": 36,
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Pawnee Nation of Oklahoma",
+   "Sac & Fox Nation",
+   "Salt River Pima-Maricopa Indian Community",
+   "Wyandotte Nation",
+   "Zuni Tribe"
+  ],
+  "condition": "near-duplicates removed"
+ },
+ {
+  "feature": "silver",
+  "n_nations": 6,
+  "subsample_n": 29,
+  "mean_jsd_criminal": 0.19103569434992443,
+  "mean_jsd_civil": 0.10057924402997667,
+  "civil_minus_criminal": -0.09045645031994776,
+  "p_signflip": 0.03125,
+  "p_floor": 0.03125,
+  "n_nations_signflip": 6,
+  "boot_ci": [
+   -0.15579545951692286,
+   -0.016439419367619362
+  ],
+  "n_pairs": 15,
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Salt River Pima-Maricopa Indian Community",
+   "Zuni Tribe"
+  ],
+  "condition": "Oklahoma cluster removed"
+ },
+ {
+  "feature": "modality_1",
+  "n_nations": 6,
+  "subsample_n": 29,
+  "mean_jsd_criminal": 0.09227353435748435,
+  "mean_jsd_civil": 0.04991888981525861,
+  "civil_minus_criminal": -0.04235464454222574,
+  "p_signflip": 0.03125,
+  "p_floor": 0.03125,
+  "n_nations_signflip": 6,
+  "boot_ci": [
+   -0.09325061992370492,
+   0.005981825436996997
+  ],
+  "n_pairs": 15,
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Salt River Pima-Maricopa Indian Community",
+   "Zuni Tribe"
+  ],
+  "condition": "Oklahoma cluster removed"
+ }
+]

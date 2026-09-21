@@ -1,0 +1,998 @@
+{
+ "results": [
+  {
+   "model": "tfidf_svm",
+   "regime": "R1_random",
+   "level": "M0",
+   "macro_f1": [
+    0.37180337936232677,
+    0.3181504939986147,
+    0.42872239966317066
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3010775862068965,
+    "Nez Perce Tribe": 0.32274273345701915,
+    "Ho-Chunk Nation of Wisconsin": 0.2582972582972583,
+    "Pawnee Nation of Oklahoma": 0.3514069264069264,
+    "Ponca Tribe of Nebraska": 0.03809523809523809,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.41041666666666665,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.22857142857142856,
+    "White Earth Band": 0.1485086342229199,
+    "Wyandotte Nation": 0.3601246170983013,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.3217567728845925,
+    "Oneida Nation": 0.30757575757575756,
+    "Sac & Fox Nation": 0.3407212885154062,
+    "Salt River Pima-Maricopa Indian Community": 0.7285714285714285,
+    "Crow Tribe of Montana": 0.21602564102564104,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6760204081632654,
+    "Kickapoo Tribe of Oklahoma": 0.2875343406593407
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R1d_doc_heldout",
+   "level": "M0",
+   "macro_f1": [
+    0.35967472429919023,
+    0.3148023646372323,
+    0.4069980492603451
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3010775862068965,
+    "Nez Perce Tribe": 0.2672413793103448,
+    "Ho-Chunk Nation of Wisconsin": 0.2845487845487846,
+    "Pawnee Nation of Oklahoma": 0.31556122448979596,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.4446428571428571,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.1741496598639456,
+    "Wyandotte Nation": 0.35,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.30099286678234044,
+    "Oneida Nation": 0.24871794871794872,
+    "Sac & Fox Nation": 0.3265467171717171,
+    "Salt River Pima-Maricopa Indian Community": 0.40317460317460313,
+    "Crow Tribe of Montana": 0.24212454212454215,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6760204081632654,
+    "Kickapoo Tribe of Oklahoma": 0.2911906108597285
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R2_lono",
+   "level": "M0",
+   "macro_f1": [
+    0.35967472429919023,
+    0.3148023646372323,
+    0.4069980492603451
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3010775862068965,
+    "Nez Perce Tribe": 0.2672413793103448,
+    "Ho-Chunk Nation of Wisconsin": 0.2845487845487846,
+    "Pawnee Nation of Oklahoma": 0.31556122448979596,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.4446428571428571,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.1741496598639456,
+    "Wyandotte Nation": 0.35,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.30099286678234044,
+    "Oneida Nation": 0.24871794871794872,
+    "Sac & Fox Nation": 0.3265467171717171,
+    "Salt River Pima-Maricopa Indian Community": 0.40317460317460313,
+    "Crow Tribe of Montana": 0.24212454212454215,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6760204081632654,
+    "Kickapoo Tribe of Oklahoma": 0.2911906108597285
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1_random",
+   "level": "M0",
+   "macro_f1": [
+    0.36551583289816025,
+    0.3092969112160869,
+    0.4193891669725388
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.434698275862069,
+    "Nez Perce Tribe": 0.2889677610174504,
+    "Ho-Chunk Nation of Wisconsin": 0.251948051948052,
+    "Pawnee Nation of Oklahoma": 0.3514069264069264,
+    "Ponca Tribe of Nebraska": 0.03809523809523809,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.260515873015873,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.22857142857142856,
+    "White Earth Band": 0.15293040293040291,
+    "Wyandotte Nation": 0.3364488664488664,
+    "Hoh Indian Tribe": 0.369047619047619,
+    "Zuni Tribe": 0.27725563909774437,
+    "Oneida Nation": 0.2673992673992674,
+    "Sac & Fox Nation": 0.3407212885154062,
+    "Salt River Pima-Maricopa Indian Community": 0.47176870748299315,
+    "Crow Tribe of Montana": 0.16602564102564105,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6760204081632654,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1d_doc_heldout",
+   "level": "M0",
+   "macro_f1": [
+    0.36301148604677286,
+    0.3157975598042066,
+    0.4119767275447949
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.36357758620689656,
+    "Nez Perce Tribe": 0.2604386582219095,
+    "Ho-Chunk Nation of Wisconsin": 0.2845487845487846,
+    "Pawnee Nation of Oklahoma": 0.31536281179138326,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.38749999999999996,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.14795918367346936,
+    "Wyandotte Nation": 0.3140350877192982,
+    "Hoh Indian Tribe": 0.37482993197278913,
+    "Zuni Tribe": 0.3323438466295609,
+    "Oneida Nation": 0.24871794871794872,
+    "Sac & Fox Nation": 0.3340863997113997,
+    "Salt River Pima-Maricopa Indian Community": 0.329694976076555,
+    "Crow Tribe of Montana": 0.184981684981685,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6760204081632654,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R2_lono",
+   "level": "M0",
+   "macro_f1": [
+    0.36239493337429907,
+    0.31533223238412234,
+    0.41172720221001236
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.36357758620689656,
+    "Nez Perce Tribe": 0.2604386582219095,
+    "Ho-Chunk Nation of Wisconsin": 0.2845487845487846,
+    "Pawnee Nation of Oklahoma": 0.31536281179138326,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.38749999999999996,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.14795918367346936,
+    "Wyandotte Nation": 0.3140350877192982,
+    "Hoh Indian Tribe": 0.37482993197278913,
+    "Zuni Tribe": 0.3323438466295609,
+    "Oneida Nation": 0.24871794871794872,
+    "Sac & Fox Nation": 0.3308035714285714,
+    "Salt River Pima-Maricopa Indian Community": 0.329694976076555,
+    "Crow Tribe of Montana": 0.184981684981685,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6760204081632654,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R1_random",
+   "level": "M1",
+   "macro_f1": [
+    0.37356950466496697,
+    0.32137886918508163,
+    0.430178772446529
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3010775862068965,
+    "Nez Perce Tribe": 0.3350340136054421,
+    "Ho-Chunk Nation of Wisconsin": 0.2414141414141414,
+    "Pawnee Nation of Oklahoma": 0.3514069264069264,
+    "Ponca Tribe of Nebraska": 0.03809523809523809,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.39050324675324677,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.22857142857142856,
+    "White Earth Band": 0.14071642643071214,
+    "Wyandotte Nation": 0.37893365893365893,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.39089635854341737,
+    "Oneida Nation": 0.35303030303030297,
+    "Sac & Fox Nation": 0.3639050491991669,
+    "Salt River Pima-Maricopa Indian Community": 0.6071428571428571,
+    "Crow Tribe of Montana": 0.16185897435897437,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.2875343406593407
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R1d_doc_heldout",
+   "level": "M1",
+   "macro_f1": [
+    0.3631348531424591,
+    0.3209105787982731,
+    0.40853616115924973
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.25625,
+    "Nez Perce Tribe": 0.29141156462585033,
+    "Ho-Chunk Nation of Wisconsin": 0.29004329004329005,
+    "Pawnee Nation of Oklahoma": 0.31556122448979596,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.4029761904761905,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.1722222222222222,
+    "White Earth Band": 0.20595238095238094,
+    "Wyandotte Nation": 0.35,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.3722401241198234,
+    "Oneida Nation": 0.2583333333333333,
+    "Sac & Fox Nation": 0.3510416666666667,
+    "Salt River Pima-Maricopa Indian Community": 0.4218880534670008,
+    "Crow Tribe of Montana": 0.24212454212454215,
+    "Iowa Tribe of Oklahoma": 0.6083333333333333,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.2911906108597285
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R2_lono",
+   "level": "M1",
+   "macro_f1": [
+    0.3631348531424591,
+    0.3209105787982731,
+    0.40853616115924973
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.25625,
+    "Nez Perce Tribe": 0.29141156462585033,
+    "Ho-Chunk Nation of Wisconsin": 0.29004329004329005,
+    "Pawnee Nation of Oklahoma": 0.31556122448979596,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.4029761904761905,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.1722222222222222,
+    "White Earth Band": 0.20595238095238094,
+    "Wyandotte Nation": 0.35,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.3722401241198234,
+    "Oneida Nation": 0.2583333333333333,
+    "Sac & Fox Nation": 0.3510416666666667,
+    "Salt River Pima-Maricopa Indian Community": 0.4218880534670008,
+    "Crow Tribe of Montana": 0.24212454212454215,
+    "Iowa Tribe of Oklahoma": 0.6083333333333333,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.2911906108597285
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1_random",
+   "level": "M1",
+   "macro_f1": [
+    0.366348604735811,
+    0.31496464818344094,
+    0.4162112818123363
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3805316091954023,
+    "Nez Perce Tribe": 0.3008895866038723,
+    "Ho-Chunk Nation of Wisconsin": 0.22942612942612944,
+    "Pawnee Nation of Oklahoma": 0.34478200938215614,
+    "Ponca Tribe of Nebraska": 0.03809523809523809,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3670600233100233,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.22857142857142856,
+    "White Earth Band": 0.19999999999999998,
+    "Wyandotte Nation": 0.3362448162448163,
+    "Hoh Indian Tribe": 0.25555555555555554,
+    "Zuni Tribe": 0.35918367346938773,
+    "Oneida Nation": 0.18406593406593408,
+    "Sac & Fox Nation": 0.3407212885154062,
+    "Salt River Pima-Maricopa Indian Community": 0.47176870748299315,
+    "Crow Tribe of Montana": 0.2006802721088435,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1d_doc_heldout",
+   "level": "M1",
+   "macro_f1": [
+    0.3458770755608546,
+    0.30630043927333855,
+    0.3786100297465224
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.30625,
+    "Nez Perce Tribe": 0.2690366469168312,
+    "Ho-Chunk Nation of Wisconsin": 0.2709433423719138,
+    "Pawnee Nation of Oklahoma": 0.31536281179138326,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3458333333333333,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.1722222222222222,
+    "White Earth Band": 0.19999999999999998,
+    "Wyandotte Nation": 0.3352065527065527,
+    "Hoh Indian Tribe": 0.24464285714285713,
+    "Zuni Tribe": 0.29183673469387755,
+    "Oneida Nation": 0.2583333333333333,
+    "Sac & Fox Nation": 0.3340863997113997,
+    "Salt River Pima-Maricopa Indian Community": 0.204694976076555,
+    "Crow Tribe of Montana": 0.184981684981685,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.5498511904761905,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R2_lono",
+   "level": "M1",
+   "macro_f1": [
+    0.34527360120181855,
+    0.30608051162877337,
+    0.37767110387469416
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.30625,
+    "Nez Perce Tribe": 0.2690366469168312,
+    "Ho-Chunk Nation of Wisconsin": 0.2709433423719138,
+    "Pawnee Nation of Oklahoma": 0.31536281179138326,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3458333333333333,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.1722222222222222,
+    "White Earth Band": 0.19999999999999998,
+    "Wyandotte Nation": 0.3352065527065527,
+    "Hoh Indian Tribe": 0.24464285714285713,
+    "Zuni Tribe": 0.29183673469387755,
+    "Oneida Nation": 0.2583333333333333,
+    "Sac & Fox Nation": 0.3313086219336219,
+    "Salt River Pima-Maricopa Indian Community": 0.204694976076555,
+    "Crow Tribe of Montana": 0.184981684981685,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.5498511904761905,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R1_random",
+   "level": "M2",
+   "macro_f1": [
+    0.37806903450665835,
+    0.32609783804562664,
+    0.4312841815791123
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3805316091954023,
+    "Nez Perce Tribe": 0.30238095238095236,
+    "Ho-Chunk Nation of Wisconsin": 0.24285714285714285,
+    "Pawnee Nation of Oklahoma": 0.3514069264069264,
+    "Ponca Tribe of Nebraska": 0.03809523809523809,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.39050324675324677,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.22857142857142856,
+    "White Earth Band": 0.16734693877551018,
+    "Wyandotte Nation": 0.3601246170983013,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.3393090569561158,
+    "Oneida Nation": 0.3416666666666666,
+    "Sac & Fox Nation": 0.35914314443726214,
+    "Salt River Pima-Maricopa Indian Community": 0.6071428571428571,
+    "Crow Tribe of Montana": 0.21602564102564104,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.2875343406593407
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R1d_doc_heldout",
+   "level": "M2",
+   "macro_f1": [
+    0.3681379863607621,
+    0.3226107056946792,
+    0.417219073146584
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.31942204301075267,
+    "Nez Perce Tribe": 0.29141156462585033,
+    "Ho-Chunk Nation of Wisconsin": 0.29004329004329005,
+    "Pawnee Nation of Oklahoma": 0.303125,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.4029761904761905,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.18095238095238095,
+    "Wyandotte Nation": 0.3310897435897436,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.4132832080200501,
+    "Oneida Nation": 0.25,
+    "Sac & Fox Nation": 0.3302083333333333,
+    "Salt River Pima-Maricopa Indian Community": 0.4420634920634921,
+    "Crow Tribe of Montana": 0.24212454212454215,
+    "Iowa Tribe of Oklahoma": 0.6083333333333333,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.2911906108597285
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R2_lono",
+   "level": "M2",
+   "macro_f1": [
+    0.36743811246416697,
+    0.3221468297936757,
+    0.41677928439013306
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.31942204301075267,
+    "Nez Perce Tribe": 0.29141156462585033,
+    "Ho-Chunk Nation of Wisconsin": 0.29004329004329005,
+    "Pawnee Nation of Oklahoma": 0.303125,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.4029761904761905,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.18095238095238095,
+    "Wyandotte Nation": 0.3310897435897436,
+    "Hoh Indian Tribe": 0.3873015873015873,
+    "Zuni Tribe": 0.4132832080200501,
+    "Oneida Nation": 0.25,
+    "Sac & Fox Nation": 0.3265467171717171,
+    "Salt River Pima-Maricopa Indian Community": 0.4420634920634921,
+    "Crow Tribe of Montana": 0.24212454212454215,
+    "Iowa Tribe of Oklahoma": 0.6083333333333333,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.2911906108597285
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1_random",
+   "level": "M2",
+   "macro_f1": [
+    0.3674908096363472,
+    0.3164798323407064,
+    0.41791038546797804
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3805316091954023,
+    "Nez Perce Tribe": 0.30612244897959184,
+    "Ho-Chunk Nation of Wisconsin": 0.22942612942612944,
+    "Pawnee Nation of Oklahoma": 0.34478200938215614,
+    "Ponca Tribe of Nebraska": 0.03809523809523809,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3670600233100233,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.22857142857142856,
+    "White Earth Band": 0.21428571428571427,
+    "Wyandotte Nation": 0.3297883597883598,
+    "Hoh Indian Tribe": 0.25555555555555554,
+    "Zuni Tribe": 0.33439849624060153,
+    "Oneida Nation": 0.30586080586080583,
+    "Sac & Fox Nation": 0.3407212885154062,
+    "Salt River Pima-Maricopa Indian Community": 0.47176870748299315,
+    "Crow Tribe of Montana": 0.184981684981685,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6760204081632654,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1d_doc_heldout",
+   "level": "M2",
+   "macro_f1": [
+    0.3605898045931495,
+    0.3168291205845113,
+    0.4073937497869088
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.31942204301075267,
+    "Nez Perce Tribe": 0.2818877551020408,
+    "Ho-Chunk Nation of Wisconsin": 0.2845487845487846,
+    "Pawnee Nation of Oklahoma": 0.3029265873015873,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3458333333333333,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.21428571428571427,
+    "Wyandotte Nation": 0.3245621532463638,
+    "Hoh Indian Tribe": 0.37482993197278913,
+    "Zuni Tribe": 0.29586466165413533,
+    "Oneida Nation": 0.25,
+    "Sac & Fox Nation": 0.32903589466089467,
+    "Salt River Pima-Maricopa Indian Community": 0.3586309523809524,
+    "Crow Tribe of Montana": 0.184981684981685,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R2_lono",
+   "level": "M2",
+   "macro_f1": [
+    0.36024743862578346,
+    0.3168372879313119,
+    0.40658285690969376
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.31942204301075267,
+    "Nez Perce Tribe": 0.2818877551020408,
+    "Ho-Chunk Nation of Wisconsin": 0.30835830835830835,
+    "Pawnee Nation of Oklahoma": 0.3029265873015873,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3458333333333333,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.18412698412698414,
+    "White Earth Band": 0.21428571428571427,
+    "Wyandotte Nation": 0.3245621532463638,
+    "Hoh Indian Tribe": 0.37482993197278913,
+    "Zuni Tribe": 0.29586466165413533,
+    "Oneida Nation": 0.25,
+    "Sac & Fox Nation": 0.32903589466089467,
+    "Salt River Pima-Maricopa Indian Community": 0.3586309523809524,
+    "Crow Tribe of Montana": 0.184981684981685,
+    "Iowa Tribe of Oklahoma": 0.49444444444444446,
+    "Colorado River Indian Tribes": 0.6556122448979592,
+    "Kickapoo Tribe of Oklahoma": 0.289617673992674
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R1_random",
+   "level": "M3",
+   "macro_f1": [
+    0.32644291831701444,
+    0.2728903276072727,
+    0.37486890374346454
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3320504926108374,
+    "Nez Perce Tribe": 0.3040894518727031,
+    "Ho-Chunk Nation of Wisconsin": 0.14646464646464646,
+    "Pawnee Nation of Oklahoma": 0.3235324707775982,
+    "Ponca Tribe of Nebraska": 0.058823529411764705,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.34226190476190477,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.1,
+    "White Earth Band": 0.20952380952380953,
+    "Wyandotte Nation": 0.3288766788766789,
+    "Hoh Indian Tribe": 0.2714285714285714,
+    "Zuni Tribe": 0.25357142857142856,
+    "Oneida Nation": 0.13593813593813595,
+    "Sac & Fox Nation": 0.31430187459599224,
+    "Salt River Pima-Maricopa Indian Community": 0.4954648526077098,
+    "Crow Tribe of Montana": 0.13122171945701358,
+    "Iowa Tribe of Oklahoma": 0.3980392156862745,
+    "Colorado River Indian Tribes": 0.7298474945533768,
+    "Kickapoo Tribe of Oklahoma": 0.28720238095238093
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R1d_doc_heldout",
+   "level": "M3",
+   "macro_f1": [
+    0.33122189291330584,
+    0.2837425542347439,
+    0.3770245849436486
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3653673835125448,
+    "Nez Perce Tribe": 0.15686274509803919,
+    "Ho-Chunk Nation of Wisconsin": 0.1607142857142857,
+    "Pawnee Nation of Oklahoma": 0.2848832528180354,
+    "Ponca Tribe of Nebraska": 0.3696969696969697,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.2972222222222222,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.08333333333333333,
+    "White Earth Band": 0.19999999999999998,
+    "Wyandotte Nation": 0.3118349668349668,
+    "Hoh Indian Tribe": 0.3071428571428571,
+    "Zuni Tribe": 0.3121848739495799,
+    "Oneida Nation": 0.12037037037037035,
+    "Sac & Fox Nation": 0.3283414502164502,
+    "Salt River Pima-Maricopa Indian Community": 0.3668831168831169,
+    "Crow Tribe of Montana": 0.17748397435897437,
+    "Iowa Tribe of Oklahoma": 0.3980392156862745,
+    "Colorado River Indian Tribes": 0.7298474945533768,
+    "Kickapoo Tribe of Oklahoma": 0.2520566239316239
+   }
+  },
+  {
+   "model": "tfidf_svm",
+   "regime": "R2_lono",
+   "level": "M3",
+   "macro_f1": [
+    0.3266331111860439,
+    0.27952609296822345,
+    0.37305499958429406
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3653673835125448,
+    "Nez Perce Tribe": 0.15686274509803919,
+    "Ho-Chunk Nation of Wisconsin": 0.14366883116883117,
+    "Pawnee Nation of Oklahoma": 0.2848832528180354,
+    "Ponca Tribe of Nebraska": 0.3696969696969697,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.2972222222222222,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.08333333333333333,
+    "White Earth Band": 0.19999999999999998,
+    "Wyandotte Nation": 0.3118349668349668,
+    "Hoh Indian Tribe": 0.3071428571428571,
+    "Zuni Tribe": 0.3121848739495799,
+    "Oneida Nation": 0.12037037037037035,
+    "Sac & Fox Nation": 0.30024801587301586,
+    "Salt River Pima-Maricopa Indian Community": 0.3668831168831169,
+    "Crow Tribe of Montana": 0.17748397435897437,
+    "Iowa Tribe of Oklahoma": 0.3980392156862745,
+    "Colorado River Indian Tribes": 0.7298474945533768,
+    "Kickapoo Tribe of Oklahoma": 0.2520566239316239
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1_random",
+   "level": "M3",
+   "macro_f1": [
+    0.32977686061010414,
+    0.27903675388265375,
+    0.3725066170890953
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.3511904761904762,
+    "Nez Perce Tribe": 0.3009148486980999,
+    "Ho-Chunk Nation of Wisconsin": 0.16305916305916307,
+    "Pawnee Nation of Oklahoma": 0.32522329203363687,
+    "Ponca Tribe of Nebraska": 0.05357142857142857,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3696603641456583,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.09795918367346938,
+    "White Earth Band": 0.17261904761904762,
+    "Wyandotte Nation": 0.3291880341880342,
+    "Hoh Indian Tribe": 0.2816326530612245,
+    "Zuni Tribe": 0.2310924369747899,
+    "Oneida Nation": 0.13593813593813595,
+    "Sac & Fox Nation": 0.31430187459599224,
+    "Salt River Pima-Maricopa Indian Community": 0.4218880534670008,
+    "Crow Tribe of Montana": 0.17748397435897437,
+    "Iowa Tribe of Oklahoma": 0.3833333333333333,
+    "Colorado River Indian Tribes": 0.7298474945533768,
+    "Kickapoo Tribe of Oklahoma": 0.2875343406593407
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R1d_doc_heldout",
+   "level": "M3",
+   "macro_f1": [
+    0.3312700251574405,
+    0.2842951423603659,
+    0.3753259370836202
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.34375,
+    "Nez Perce Tribe": 0.14471243042671617,
+    "Ho-Chunk Nation of Wisconsin": 0.1607142857142857,
+    "Pawnee Nation of Oklahoma": 0.2848832528180354,
+    "Ponca Tribe of Nebraska": 0.24675324675324675,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3130952380952381,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.07738095238095238,
+    "White Earth Band": 0.1761904761904762,
+    "Wyandotte Nation": 0.30775946275946275,
+    "Hoh Indian Tribe": 0.2952380952380952,
+    "Zuni Tribe": 0.25504201680672267,
+    "Oneida Nation": 0.11243386243386243,
+    "Sac & Fox Nation": 0.30233134920634924,
+    "Salt River Pima-Maricopa Indian Community": 0.40238095238095234,
+    "Crow Tribe of Montana": 0.19122023809523808,
+    "Iowa Tribe of Oklahoma": 0.3980392156862745,
+    "Colorado River Indian Tribes": 0.6828703703703702,
+    "Kickapoo Tribe of Oklahoma": 0.2875343406593407
+   }
+  },
+  {
+   "model": "tfidf_lr",
+   "regime": "R2_lono",
+   "level": "M3",
+   "macro_f1": [
+    0.32971552031682333,
+    0.2822522900588696,
+    0.3740346447533054
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.34375,
+    "Nez Perce Tribe": 0.14471243042671617,
+    "Ho-Chunk Nation of Wisconsin": 0.13920454545454547,
+    "Pawnee Nation of Oklahoma": 0.2848832528180354,
+    "Ponca Tribe of Nebraska": 0.24675324675324675,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.3130952380952381,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.07738095238095238,
+    "White Earth Band": 0.1761904761904762,
+    "Wyandotte Nation": 0.30775946275946275,
+    "Hoh Indian Tribe": 0.2952380952380952,
+    "Zuni Tribe": 0.25504201680672267,
+    "Oneida Nation": 0.11243386243386243,
+    "Sac & Fox Nation": 0.30233134920634924,
+    "Salt River Pima-Maricopa Indian Community": 0.40238095238095234,
+    "Crow Tribe of Montana": 0.19122023809523808,
+    "Iowa Tribe of Oklahoma": 0.3980392156862745,
+    "Colorado River Indian Tribes": 0.6828703703703702,
+    "Kickapoo Tribe of Oklahoma": 0.2875343406593407
+   }
+  },
+  {
+   "model": "rules",
+   "regime": "none",
+   "level": "M0",
+   "macro_f1": [
+    0.31119475357374415,
+    0.258802332386015,
+    0.36097267846197106
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.4144668737060041,
+    "Nez Perce Tribe": 0.2329004329004329,
+    "Ho-Chunk Nation of Wisconsin": 0.36020408163265305,
+    "Pawnee Nation of Oklahoma": 0.2615726664639708,
+    "Ponca Tribe of Nebraska": 0.016666666666666666,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.24708333333333332,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.2,
+    "White Earth Band": 0.17687074829931973,
+    "Wyandotte Nation": 0.3618524332810047,
+    "Hoh Indian Tribe": 0.1994047619047619,
+    "Zuni Tribe": 0.31658456486042696,
+    "Oneida Nation": 0.1391304347826087,
+    "Sac & Fox Nation": 0.2901785714285714,
+    "Salt River Pima-Maricopa Indian Community": 0.4861111111111111,
+    "Crow Tribe of Montana": 0.27997557997558,
+    "Iowa Tribe of Oklahoma": 0.4993006993006993,
+    "Colorado River Indian Tribes": 0.4890756302521009,
+    "Kickapoo Tribe of Oklahoma": 0.1673638861138861
+   }
+  },
+  {
+   "model": "nli_zeroshot",
+   "regime": "none",
+   "level": "M0",
+   "macro_f1": [
+    0.3654213779061922,
+    0.30377891363680964,
+    0.41621892065792
+   ],
+   "per_nation": {
+    "Reno-Sparks Indian Colony": 0.25625,
+    "Nez Perce Tribe": 0.28928571428571426,
+    "Ho-Chunk Nation of Wisconsin": 0.09523809523809523,
+    "Pawnee Nation of Oklahoma": 0.4342993892412497,
+    "Ponca Tribe of Nebraska": 0.020833333333333332,
+    "Dry Creek Rancheria Band of Pomo Indians": 0.2813186813186813,
+    "Flandreau Santee Sioux Tribe of South Dakota": 0.29393939393939394,
+    "White Earth Band": 0.19907407407407407,
+    "Wyandotte Nation": 0.42482308712958866,
+    "Hoh Indian Tribe": 0.3299319727891156,
+    "Zuni Tribe": 0.3616123642439432,
+    "Oneida Nation": 0.2690476190476191,
+    "Sac & Fox Nation": 0.30776143790849675,
+    "Salt River Pima-Maricopa Indian Community": 0.4615705931495405,
+    "Crow Tribe of Montana": 0.4809523809523809,
+    "Iowa Tribe of Oklahoma": 0.39999999999999997,
+    "Colorado River Indian Tribes": 0.4150326797385621,
+    "Kickapoo Tribe of Oklahoma": 0.23835470085470084
+   }
+  }
+ ],
+ "tests": [
+  {
+   "model": "tfidf_svm",
+   "level": "M2",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": 0.009823540138721812,
+   "p": 0.5218239088045598
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M2",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": 0.009620117018632024,
+   "p": 0.5300734963251837
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M2",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": 0.00020342312008978883,
+   "p": 1.0
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M1",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": 0.010079168250589339,
+   "p": 0.5496225188740563
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M1",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": 0.010079168250589339,
+   "p": 0.5496225188740563
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M1",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": 0.0,
+   "p": 1.0
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M3",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": -0.0008048660746280813,
+   "p": 0.9751512424378781
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M3",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": -0.003312582124010798,
+   "p": 0.9003049847507625
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M3",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": 0.0025077160493827163,
+   "p": 0.5018749062546872
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M0",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": 0.024097729175716884,
+   "p": 0.18464076796160192
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M0",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": 0.024097729175716884,
+   "p": 0.18464076796160192
+  },
+  {
+   "model": "tfidf_svm",
+   "level": "M0",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": 0.0,
+   "p": 1.0
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M2",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": 0.012446679441634858,
+   "p": 0.3180340982950852
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M2",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": 0.013769430764386179,
+   "p": 0.2537873106344683
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M2",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": -0.0013227513227513212,
+   "p": 1.0
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M1",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": 0.03106182113185335,
+   "p": 0.05959702014899255
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M1",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": 0.030907500144199032,
+   "p": 0.06184690765461727
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M1",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": 0.00015432098765432044,
+   "p": 1.0
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M3",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": 0.009201004964739119,
+   "p": 0.5490725463726813
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M3",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": 0.00800601939475355,
+   "p": 0.5849707514624268
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M3",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": 0.0011949855699855683,
+   "p": 1.0
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M0",
+   "a": "R1_random",
+   "b": "R2_lono",
+   "delta": 0.006850472344317422,
+   "p": 0.6033198340082996
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M0",
+   "a": "R1_random",
+   "b": "R1d_doc_heldout",
+   "delta": 0.006668092995271406,
+   "p": 0.6123193840307984
+  },
+  {
+   "model": "tfidf_lr",
+   "level": "M0",
+   "a": "R1d_doc_heldout",
+   "b": "R2_lono",
+   "delta": 0.00018237934904601535,
+   "p": 1.0
+  }
+ ],
+ "folds": {
+  "Colorado River Indian Tribes": 19,
+  "Crow Tribe of Montana": 24,
+  "Dry Creek Rancheria Band of Pomo Indians": 25,
+  "Flandreau Santee Sioux Tribe of South Dakota": 20,
+  "Ho-Chunk Nation of Wisconsin": 20,
+  "Hoh Indian Tribe": 17,
+  "Iowa Tribe of Oklahoma": 15,
+  "Kickapoo Tribe of Oklahoma": 40,
+  "Nez Perce Tribe": 27,
+  "Oneida Nation": 19,
+  "Pawnee Nation of Oklahoma": 68,
+  "Ponca Tribe of Nebraska": 18,
+  "Reno-Sparks Indian Colony": 31,
+  "Sac & Fox Nation": 41,
+  "Salt River Pima-Maricopa Indian Community": 22,
+  "White Earth Band": 19,
+  "Wyandotte Nation": 64,
+  "Zuni Tribe": 27
+ }
+}

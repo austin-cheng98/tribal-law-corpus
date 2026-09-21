@@ -1,0 +1,25 @@
+{
+ "n_folds": 21,
+ "n_identical": 19,
+ "identical_nations": [
+  "Chitimacha Tribe of Louisiana",
+  "Colorado River Indian Tribes",
+  "Crow Tribe of Montana",
+  "Dry Creek Rancheria Band of Pomo Indians",
+  "Flandreau Santee Sioux Tribe of South Dakota",
+  "Hannahville Indian Community",
+  "Ho-Chunk Nation of Wisconsin",
+  "Hoh Indian Tribe",
+  "Iowa Tribe of Oklahoma",
+  "Kickapoo Tribe of Oklahoma",
+  "Nez Perce Tribe",
+  "Oneida Nation",
+  "Pawnee Nation of Oklahoma",
+  "Ponca Tribe of Nebraska",
+  "Quileute Tribe",
+  "Reno-Sparks Indian Colony",
+  "White Earth Band",
+  "Wyandotte Nation",
+  "Zuni Tribe"
+ ]
+}

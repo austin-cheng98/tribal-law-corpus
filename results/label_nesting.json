@@ -1,0 +1,38 @@
+{
+ "nation": {
+  "name": "Nation",
+  "n": 4574,
+  "n_docs": 89,
+  "n_classes": 24,
+  "u": 1.0,
+  "u_null": 0.06400061088107092,
+  "u_adj": 1.0
+ },
+ "gold": {
+  "name": "provision function",
+  "n": 581,
+  "n_docs": 68,
+  "n_classes": 8,
+  "u": 0.29941431848949435,
+  "u_null": 0.19050037652006693,
+  "u_adj": 0.13454477162227774
+ },
+ "modality": {
+  "name": "deontic modality",
+  "n": 4574,
+  "n_docs": 89,
+  "n_classes": 4,
+  "u": 0.1562251784117215,
+  "u_null": 0.023786631770726503,
+  "u_adj": 0.1356655736862338
+ },
+ "domain": {
+  "name": "legal domain",
+  "n": 4574,
+  "n_docs": 89,
+  "n_classes": 2,
+  "u": 0.856902544887964,
+  "u_null": 0.0154987780213423,
+  "u_adj": 0.854649794314691
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "n_nations": 12,
+ "levels": {
+  "M0": {
+   "rho": 0.28474258892534354,
+   "p": 0.3672316384180791,
+   "loo_min": 0.11631052629980886,
+   "loo_max": 0.41406547362731955
+  },
+  "M1": {
+   "rho": 0.33457254198727865,
+   "p": 0.28443577821108945,
+   "loo_min": 0.15818231576774006,
+   "loo_max": 0.4791993683552125
+  },
+  "M2": {
+   "rho": 0.4084608328183192,
+   "p": 0.1887405629718514,
+   "loo_min": 0.26606624323887046,
+   "loo_max": 0.6238794669049377
+  },
+  "M3": {
+   "rho": 0.47857509731594466,
+   "p": 0.12039398030098496,
+   "loo_min": 0.31464265445104544,
+   "loo_max": 0.6674238124719146
+  }
+ },
+ "loo_min": 0.11631052629980886,
+ "loo_max": 0.6674238124719146,
+ "pairs": {
+  "Crow Tribe of Montana": {
+   "doc_probe": 1.0,
+   "gap": 0.012121212121212144
+  },
+  "Dry Creek Rancheria Band of Pomo Indians": {
+   "doc_probe": 0.9352245862884161,
+   "gap": 0.1648809523809524
+  },
+  "Ho-Chunk Nation of Wisconsin": {
+   "doc_probe": 0.9770764641230962,
+   "gap": 0.0
+  },
+  "Hoh Indian Tribe": {
+   "doc_probe": 0.9488095238095238,
+   "gap": 0.0
+  },
+  "Iowa Tribe of Oklahoma": {
+   "doc_probe": 0.9751512532411408,
+   "gap": 0.0
+  },
+  "Nez Perce Tribe": {
+   "doc_probe": 0.9134136546184739,
+   "gap": 0.1611842105263158
+  },
+  "Ponca Tribe of Nebraska": {
+   "doc_probe": 0.324468085106383,
+   "gap": 0.0
+  },
+  "Reno-Sparks Indian Colony": {
+   "doc_probe": 0.9572112016930712,
+   "gap": 0.12969187675070032
+  },
+  "Sac & Fox Nation": {
+   "doc_probe": 0.9652941176470589,
+   "gap": -0.0037202380952381098
+  },
+  "Salt River Pima-Maricopa Indian Community": {
+   "doc_probe": 0.9924112607099143,
+   "gap": 0.1431818181818183
+  },
+  "Wyandotte Nation": {
+   "doc_probe": 0.9094433175569079,
+   "gap": -0.17010721247563348
+  },
+  "Zuni Tribe": {
+   "doc_probe": 0.4,
+   "gap": -0.052369281045751614
+  }
+ }
+}

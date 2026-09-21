@@ -1,0 +1,223 @@
+{
+ "n_pairs": 594,
+ "n_provisions": 700,
+ "share": 0.1530389156099694,
+ "by_domain": {
+  "criminal": [
+   54,
+   2001
+  ],
+  "civil": [
+   646,
+   2573
+  ]
+ },
+ "by_domain_no_ok": {
+  "criminal": [
+   0,
+   1424
+  ],
+  "civil": [
+   14,
+   1013
+  ]
+ },
+ "paired": {
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Iowa Tribe of Oklahoma",
+   "Pawnee Nation of Oklahoma",
+   "Sac & Fox Nation",
+   "Salt River Pima-Maricopa Indian Community",
+   "Wyandotte Nation",
+   "Zuni Tribe"
+  ],
+  "delta": 0.13466251676439808,
+  "p": 0.015649217539123045,
+  "ci": [
+   0.051863200333945016,
+   0.22132172614523646
+  ],
+  "per_nation": {
+   "Crow Tribe of Montana": [
+    0.0,
+    0.0
+   ],
+   "Dry Creek Rancheria Band of Pomo Indians": [
+    0.0,
+    0.06818181818181818
+   ],
+   "Ho-Chunk Nation of Wisconsin": [
+    0.0,
+    0.0625
+   ],
+   "Hoh Indian Tribe": [
+    0.0,
+    0.0
+   ],
+   "Iowa Tribe of Oklahoma": [
+    0.0,
+    0.25925925925925924
+   ],
+   "Pawnee Nation of Oklahoma": [
+    0.13829787234042554,
+    0.43028846153846156
+   ],
+   "Sac & Fox Nation": [
+    0.25,
+    0.6350877192982456
+   ],
+   "Salt River Pima-Maricopa Indian Community": [
+    0.0,
+    0.0
+   ],
+   "Wyandotte Nation": [
+    0.01020408163265306,
+    0.2620320855614973
+   ],
+   "Zuni Tribe": [
+    0.0,
+    0.027777777777777776
+   ]
+  }
+ },
+ "paired_no_ok": {
+  "nations": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Salt River Pima-Maricopa Indian Community",
+   "Zuni Tribe"
+  ],
+  "delta": 0.02640993265993266,
+  "p": 0.24943752812359382,
+  "ci": [
+   0.004629629629629629,
+   0.04913720538720539
+  ],
+  "per_nation": {
+   "Crow Tribe of Montana": [
+    0.0,
+    0.0
+   ],
+   "Dry Creek Rancheria Band of Pomo Indians": [
+    0.0,
+    0.06818181818181818
+   ],
+   "Ho-Chunk Nation of Wisconsin": [
+    0.0,
+    0.0625
+   ],
+   "Hoh Indian Tribe": [
+    0.0,
+    0.0
+   ],
+   "Salt River Pima-Maricopa Indian Community": [
+    0.0,
+    0.0
+   ],
+   "Zuni Tribe": [
+    0.0,
+    0.027777777777777776
+   ]
+  }
+ },
+ "threshold_sensitivity": {
+  "0.7": {
+   "share": 0.20529077393965894,
+   "criminal": 0.035982008995502246,
+   "civil": 0.33696074621064903
+  },
+  "0.8": {
+   "share": 0.1530389156099694,
+   "criminal": 0.026986506746626688,
+   "civil": 0.2510687912942091
+  },
+  "0.9": {
+   "share": 0.10122431132487976,
+   "criminal": 0.015992003998001,
+   "civil": 0.16750874465604354
+  }
+ },
+ "nation_pairs": [
+  [
+   "Pawnee Nation of Oklahoma",
+   "Sac & Fox Nation",
+   153
+  ],
+  [
+   "Kickapoo Tribe of Oklahoma",
+   "Pawnee Nation of Oklahoma",
+   112
+  ],
+  [
+   "Kickapoo Tribe of Oklahoma",
+   "Sac & Fox Nation",
+   110
+  ],
+  [
+   "Sac & Fox Nation",
+   "Wyandotte Nation",
+   71
+  ],
+  [
+   "Pawnee Nation of Oklahoma",
+   "Wyandotte Nation",
+   61
+  ],
+  [
+   "Kickapoo Tribe of Oklahoma",
+   "Wyandotte Nation",
+   57
+  ],
+  [
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   6
+  ],
+  [
+   "Iowa Tribe of Oklahoma",
+   "Sac & Fox Nation",
+   6
+  ],
+  [
+   "Iowa Tribe of Oklahoma",
+   "Kickapoo Tribe of Oklahoma",
+   6
+  ],
+  [
+   "Iowa Tribe of Oklahoma",
+   "Wyandotte Nation",
+   4
+  ],
+  [
+   "Iowa Tribe of Oklahoma",
+   "Pawnee Nation of Oklahoma",
+   3
+  ],
+  [
+   "Delaware Tribe of Indians",
+   "Wyandotte Nation",
+   2
+  ],
+  [
+   "Ponca Tribe of Nebraska",
+   "Zuni Tribe",
+   1
+  ],
+  [
+   "Delaware Tribe of Indians",
+   "Pawnee Nation of Oklahoma",
+   1
+  ],
+  [
+   "Delaware Tribe of Indians",
+   "Kickapoo Tribe of Oklahoma",
+   1
+  ]
+ ]
+}
