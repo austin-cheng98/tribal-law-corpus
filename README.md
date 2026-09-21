@@ -37,9 +37,14 @@ python src/exp_diffusion.py        # cross-Nation near-duplicate detection
 python src/exp_comparative.py      # divergence between Nations, by domain
 python src/exp_classify.py         # provision function across the split ladder
 python src/exp_source_diversity.py # what predicts the distortion, over four labels
+python src/exp_label_dose.py       # restricting documents per label value, in this corpus
 python src/exp_template_adoption.py # borrowed drafting on each side of the corpus
 python src/check_probe_cluster.py  # the probe interval at document and Nation level
+python src/exp_statecode.py        # the same dose-response in United States state codes
 ```
+
+`exp_statecode.py` is the only script that reads data from outside the repository: it
+streams the state-code shard of Pile of Law and segments it locally.
 
 Every experiment is seeded from `SEED` in `src/data.py`. Confidence intervals resample Nations
 rather than provisions, because provisions from one Nation are not independent. Significance
