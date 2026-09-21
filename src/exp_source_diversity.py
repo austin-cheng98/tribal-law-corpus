@@ -3,7 +3,8 @@
 Runs the random / document-held-out ladder for four labels on one fixed row set, one fold
 construction and one classifier, so the labels differ only in their relation to the source
 document. Theil's U measures nesting; documents per label value measures how many distinct
-sources a label value is realized in. Only the second orders the distortion.
+sources a label value is realized in. Only the second separates the label that is
+distorted from the ones that are not.
 """
 import argparse, collections, json, math, pathlib, sys
 import numpy as np
