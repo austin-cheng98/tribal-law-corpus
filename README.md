@@ -33,6 +33,7 @@ pip install -r requirements.txt
 python src/exp_doc_probe.py        # documents are recognizable
 python src/exp_probe_matched.py    # Nation identification, both protocols, size-matched
 python src/exp_probe_domain.py     # the same, within one legal domain
+python src/exp_probe_encoder.py    # the same contrast with a fine-tuned encoder (GPU)
 python src/exp_diffusion.py        # cross-Nation near-duplicate detection
 python src/exp_comparative.py      # divergence between Nations, by domain
 python src/exp_classify.py         # provision function across the split ladder
@@ -40,6 +41,8 @@ python src/exp_source_diversity.py # what predicts the distortion, over four lab
 python src/exp_label_dose.py       # restricting documents per label value, in this corpus
 python src/exp_template_adoption.py # borrowed drafting on each side of the corpus
 python src/check_probe_cluster.py  # the probe interval at document and Nation level
+python src/check_encoder_units.py  # the encoder contrast at the same units
+python src/check_cluster_units.py  # every central contrast, resampled at three units
 python src/exp_statecode.py        # the same dose-response in United States state codes
 ```
 
