@@ -1,0 +1,77 @@
+{
+ "model": "GPT-6-Sol",
+ "effort": "medium",
+ "k_examples": 40,
+ "unparseable_lines": {
+  "random_block1": 0,
+  "doc_heldout_block1": 0,
+  "random_block2": 0,
+  "doc_heldout_block2": 0,
+  "random_block3": 0,
+  "doc_heldout_block3": 0,
+  "random_block4": 0,
+  "doc_heldout_block4": 0
+ },
+ "unlabelled_items": {
+  "random_block1": 0,
+  "doc_heldout_block1": 0,
+  "random_block2": 0,
+  "doc_heldout_block2": 0,
+  "random_block3": 0,
+  "doc_heldout_block3": 0,
+  "random_block4": 0,
+  "doc_heldout_block4": 0
+ },
+ "arms": {
+  "random": {
+   "n": 295,
+   "n_nations": 21,
+   "macro_f1": [
+    0.663944305042428,
+    0.5853442036904825,
+    0.7279004430068845
+   ]
+  },
+  "doc_heldout": {
+   "n": 295,
+   "n_nations": 21,
+   "macro_f1": [
+    0.7370826753838751,
+    0.6832585272773659,
+    0.7853220226326326
+   ]
+  }
+ },
+ "gap": {
+  "delta": -0.072320273097584,
+  "p": 0.04074796260186991,
+  "n_nations": 21,
+  "ratio": 0.9007731794762963,
+  "note": "Nation-level pairing; the example set is fixed within a block, so this p overstates the replication available"
+ },
+ "by_block": {
+  "blocks": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "delta": [
+   -0.008613718768420098,
+   -0.04693898655151019,
+   -0.06842048882490048,
+   -0.12672589130542677
+  ],
+  "mean": -0.06267477136256439,
+  "n_blocks": 4,
+  "n_favour_heldout": 4,
+  "p_sign": 0.0625,
+  "floor": 0.17647058823529413
+ },
+ "mcnemar": {
+  "n_paired": 295,
+  "b_random": 12,
+  "b_heldout": 32,
+  "p": 0.003657766827927844
+ }
+}

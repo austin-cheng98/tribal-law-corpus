@@ -1,0 +1,792 @@
+{
+ "seed": 20260101,
+ "n_base": 2840,
+ "n_gold": 364,
+ "chance_normalized": {
+  "Nation": {
+   "n": 2840,
+   "n_classes": 15,
+   "docs_per_value_mean": 5.333333333333333,
+   "docs_per_value_median": 3.0,
+   "docs_per_value_min": 2,
+   "values_at_two_docs": 7,
+   "random_f1": 0.7005734130059801,
+   "doc_heldout_f1": 0.1394233977271799,
+   "ratio": 5.0247908487845345,
+   "perm_null_f1": 0.06154245934398807,
+   "lost_share_f1": 0.8781265008574435,
+   "random_acc": 0.6626760563380282,
+   "doc_heldout_acc": 0.14859154929577464,
+   "majority_acc": 0.2007042253521127,
+   "lost_share_acc": 1.1128048780487805
+  },
+  "legal domain": {
+   "n": 2840,
+   "n_classes": 2,
+   "docs_per_value_mean": 40.5,
+   "docs_per_value_median": 40.5,
+   "docs_per_value_min": 37,
+   "values_at_two_docs": 0,
+   "random_f1": 0.9598670957080728,
+   "doc_heldout_f1": 0.9186029993836026,
+   "ratio": 1.0449204894303188,
+   "perm_null_f1": 0.4886994815092519,
+   "lost_share_f1": 0.08757837992459694,
+   "random_acc": 0.9602112676056338,
+   "doc_heldout_acc": 0.9193661971830986,
+   "majority_acc": 0.5577464788732395,
+   "lost_share_acc": 0.10148731408573916
+  },
+  "deontic modality": {
+   "n": 2840,
+   "n_classes": 4,
+   "docs_per_value_mean": 59.75,
+   "docs_per_value_median": 65.5,
+   "docs_per_value_min": 37,
+   "values_at_two_docs": 0,
+   "random_f1": 0.8073306316459096,
+   "doc_heldout_f1": 0.7564314120363733,
+   "ratio": 1.0672886117625806,
+   "perm_null_f1": 0.2421916186020479,
+   "lost_share_f1": 0.09006495470095223,
+   "random_acc": 0.8158450704225352,
+   "doc_heldout_acc": 0.7665492957746479,
+   "majority_acc": 0.3757042253521127,
+   "lost_share_acc": 0.11199999999999986
+  },
+  "provision function": {
+   "n": 364,
+   "n_classes": 8,
+   "docs_per_value_mean": 18.125,
+   "docs_per_value_median": 16.5,
+   "docs_per_value_min": 4,
+   "values_at_two_docs": 0,
+   "random_f1": 0.3117510165408375,
+   "doc_heldout_f1": 0.298566157717308,
+   "ratio": 1.0441605938339915,
+   "perm_null_f1": 0.11293002542893713,
+   "lost_share_f1": 0.06631522531797858,
+   "random_acc": 0.5851648351648352,
+   "doc_heldout_acc": 0.5851648351648352,
+   "majority_acc": 0.3324175824175824,
+   "lost_share_acc": 0.0
+  }
+ },
+ "per_value": {
+  "Nation": [
+   {
+    "value": "Chitimacha Tribe of Louisiana",
+    "n": 84,
+    "n_docs": 5,
+    "random_f1": 0.7802197802197802,
+    "doc_heldout_f1": 0.031496062992125984,
+    "ratio": 24.771978021978022,
+    "drop": 0.7487237172276542
+   },
+   {
+    "value": "Colorado River Indian Tribes",
+    "n": 73,
+    "n_docs": 2,
+    "random_f1": 0.8591549295774648,
+    "doc_heldout_f1": 0.0,
+    "ratio": null,
+    "drop": 0.8591549295774648
+   },
+   {
+    "value": "Crow Tribe of Montana",
+    "n": 212,
+    "n_docs": 3,
+    "random_f1": 0.8736842105263158,
+    "doc_heldout_f1": 0.06167400881057269,
+    "ratio": 14.166165413533836,
+    "drop": 0.8120102017157431
+   },
+   {
+    "value": "Dry Creek Rancheria Band of Pomo Indians",
+    "n": 137,
+    "n_docs": 2,
+    "random_f1": 0.44866920152091255,
+    "doc_heldout_f1": 0.0962962962962963,
+    "ratio": 4.659257092717168,
+    "drop": 0.3523729052246163
+   },
+   {
+    "value": "Gila River Indian Community",
+    "n": 76,
+    "n_docs": 2,
+    "random_f1": 0.8811188811188811,
+    "doc_heldout_f1": 0.0,
+    "ratio": null,
+    "drop": 0.8811188811188811
+   },
+   {
+    "value": "Ho-Chunk Nation of Wisconsin",
+    "n": 147,
+    "n_docs": 3,
+    "random_f1": 0.6319218241042345,
+    "doc_heldout_f1": 0.014234875444839857,
+    "ratio": 44.39250814332247,
+    "drop": 0.6176869486593947
+   },
+   {
+    "value": "Hoh Indian Tribe",
+    "n": 86,
+    "n_docs": 2,
+    "random_f1": 0.5534591194968553,
+    "doc_heldout_f1": 0.05217391304347826,
+    "ratio": 10.60796645702306,
+    "drop": 0.501285206453377
+   },
+   {
+    "value": "Iowa Tribe of Oklahoma",
+    "n": 116,
+    "n_docs": 3,
+    "random_f1": 0.5480769230769231,
+    "doc_heldout_f1": 0.005376344086021506,
+    "ratio": 101.9423076923077,
+    "drop": 0.5427005789909016
+   },
+   {
+    "value": "Nez Perce Tribe",
+    "n": 246,
+    "n_docs": 3,
+    "random_f1": 0.8,
+    "doc_heldout_f1": 0.09597523219814241,
+    "ratio": 8.335483870967742,
+    "drop": 0.7040247678018576
+   },
+   {
+    "value": "Ponca Tribe of Nebraska",
+    "n": 127,
+    "n_docs": 2,
+    "random_f1": 0.7813620071684588,
+    "doc_heldout_f1": 0.7724137931034483,
+    "ratio": 1.0115847414234511,
+    "drop": 0.008948214065010562
+   },
+   {
+    "value": "Reno-Sparks Indian Colony",
+    "n": 261,
+    "n_docs": 2,
+    "random_f1": 0.7912885662431942,
+    "doc_heldout_f1": 0.08455882352941177,
+    "ratio": 9.357847392093428,
+    "drop": 0.7067297427137824
+   },
+   {
+    "value": "Sac & Fox Nation",
+    "n": 389,
+    "n_docs": 42,
+    "random_f1": 0.4260355029585799,
+    "doc_heldout_f1": 0.21138211382113822,
+    "ratio": 2.0154756486117433,
+    "drop": 0.21465338913744167
+   },
+   {
+    "value": "Salt River Pima-Maricopa Indian Community",
+    "n": 169,
+    "n_docs": 4,
+    "random_f1": 0.8737864077669902,
+    "doc_heldout_f1": 0.2230769230769231,
+    "ratio": 3.9169735520589217,
+    "drop": 0.6507094846900672
+   },
+   {
+    "value": "Wyandotte Nation",
+    "n": 570,
+    "n_docs": 3,
+    "random_f1": 0.5757847533632287,
+    "doc_heldout_f1": 0.054,
+    "ratio": 10.662680617837568,
+    "drop": 0.5217847533632286
+   },
+   {
+    "value": "Zuni Tribe",
+    "n": 147,
+    "n_docs": 2,
+    "random_f1": 0.6840390879478827,
+    "doc_heldout_f1": 0.38869257950530034,
+    "ratio": 1.7598460171750074,
+    "drop": 0.29534650844258237
+   }
+  ],
+  "legal domain": [
+   {
+    "value": "civil",
+    "n": 1256,
+    "n_docs": 44,
+    "random_f1": 0.956150562669771,
+    "doc_heldout_f1": 0.9107212475633528,
+    "ratio": 1.0498827882054635,
+    "drop": 0.04542931510641823
+   },
+   {
+    "value": "criminal",
+    "n": 1584,
+    "n_docs": 37,
+    "random_f1": 0.9635836287463745,
+    "doc_heldout_f1": 0.9264847512038523,
+    "ratio": 1.0400426207709481,
+    "drop": 0.03709887754252217
+   }
+  ],
+  "deontic modality": [
+   {
+    "value": "MAY",
+    "n": 1067,
+    "n_docs": 71,
+    "random_f1": 0.8447653429602888,
+    "doc_heldout_f1": 0.810032512772875,
+    "ratio": 1.042878316165999,
+    "drop": 0.0347328301874138
+   },
+   {
+    "value": "MUST",
+    "n": 581,
+    "n_docs": 64,
+    "random_f1": 0.7731685789938217,
+    "doc_heldout_f1": 0.7029702970297029,
+    "ratio": 1.0998595278644507,
+    "drop": 0.07019828196411881
+   },
+   {
+    "value": "MUST_NOT",
+    "n": 832,
+    "n_docs": 67,
+    "random_f1": 0.8151419558359622,
+    "doc_heldout_f1": 0.7525655644241733,
+    "ratio": 1.083150750406271,
+    "drop": 0.06257639141178883
+   },
+   {
+    "value": "NONE",
+    "n": 360,
+    "n_docs": 37,
+    "random_f1": 0.7962466487935657,
+    "doc_heldout_f1": 0.7601572739187418,
+    "ratio": 1.0474761948784321,
+    "drop": 0.03608937487482389
+   }
+  ],
+  "provision function": [
+   {
+    "value": "DEFINITION",
+    "n": 18,
+    "n_docs": 16,
+    "random_f1": 0.0,
+    "doc_heldout_f1": 0.0,
+    "ratio": null,
+    "drop": 0.0
+   },
+   {
+    "value": "GRANT_OF_AUTHORITY",
+    "n": 46,
+    "n_docs": 21,
+    "random_f1": 0.5168539325842697,
+    "doc_heldout_f1": 0.4878048780487805,
+    "ratio": 1.059550561797753,
+    "drop": 0.029049054535489227
+   },
+   {
+    "value": "OBLIGATION",
+    "n": 4,
+    "n_docs": 4,
+    "random_f1": 0.0,
+    "doc_heldout_f1": 0.0,
+    "ratio": null,
+    "drop": 0.0
+   },
+   {
+    "value": "PROCEDURE",
+    "n": 121,
+    "n_docs": 37,
+    "random_f1": 0.7152317880794702,
+    "doc_heldout_f1": 0.7192429022082019,
+    "ratio": 0.9944231439525968,
+    "drop": -0.004011114128731674
+   },
+   {
+    "value": "PROHIBITION",
+    "n": 32,
+    "n_docs": 14,
+    "random_f1": 0.2807017543859649,
+    "doc_heldout_f1": 0.13333333333333333,
+    "ratio": 2.1052631578947367,
+    "drop": 0.14736842105263157
+   },
+   {
+    "value": "RIGHT_ENTITLEMENT",
+    "n": 24,
+    "n_docs": 17,
+    "random_f1": 0.3333333333333333,
+    "doc_heldout_f1": 0.4,
+    "ratio": 0.8333333333333333,
+    "drop": -0.06666666666666671
+   },
+   {
+    "value": "SANCTION_REMEDY",
+    "n": 106,
+    "n_docs": 26,
+    "random_f1": 0.647887323943662,
+    "doc_heldout_f1": 0.6481481481481481,
+    "ratio": 0.9995975855130785,
+    "drop": -0.0002608242044861431
+   },
+   {
+    "value": "SCOPE_APPLICABILITY",
+    "n": 13,
+    "n_docs": 10,
+    "random_f1": 0.0,
+    "doc_heldout_f1": 0.0,
+    "ratio": null,
+    "drop": 0.0
+   }
+  ],
+  "pooled": {
+   "n_values": 29,
+   "spearman_docs_vs_drop": -0.5645561041476057,
+   "p": 0.0014499275036248187
+  }
+ },
+ "diagnostic": {
+  "per_nation": {
+   "Crow Tribe of Montana": {
+    "n": 211,
+    "n_docs": 2,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.4631043256997456,
+    "M0": 1.0,
+    "M2": 1.0,
+    "perm_null": 0.4823536521637216
+   },
+   "Dry Creek Rancheria Band of Pomo Indians": {
+    "n": 137,
+    "n_docs": 2,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.3911111111111111,
+    "M0": 0.9352245862884161,
+    "M2": 0.9430285748232639,
+    "perm_null": 0.5112777413706555
+   },
+   "Ho-Chunk Nation of Wisconsin": {
+    "n": 146,
+    "n_docs": 2,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.3941908713692946,
+    "M0": 0.9770764641230962,
+    "M2": 0.9847916666666667,
+    "perm_null": 0.545738027883376
+   },
+   "Hoh Indian Tribe": {
+    "n": 86,
+    "n_docs": 2,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.38571428571428573,
+    "M0": 0.9488095238095238,
+    "M2": 0.9618963225520603,
+    "perm_null": 0.5017564876754259
+   },
+   "Iowa Tribe of Oklahoma": {
+    "n": 115,
+    "n_docs": 2,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.43349753694581283,
+    "M0": 0.9751512532411408,
+    "M2": 0.9751512532411408,
+    "perm_null": 0.47384614278356174
+   },
+   "Nez Perce Tribe": {
+    "n": 245,
+    "n_docs": 2,
+    "domains": [
+     "criminal"
+    ],
+    "degenerate_f1": 0.4567627494456763,
+    "M0": 0.9134136546184739,
+    "M2": 0.9134136546184739,
+    "perm_null": 0.4622050629796778
+   },
+   "Ponca Tribe of Nebraska": {
+    "n": 127,
+    "n_docs": 2,
+    "domains": [
+     "civil"
+    ],
+    "degenerate_f1": 0.37745098039215685,
+    "M0": 0.324468085106383,
+    "M2": 0.35824468085106387,
+    "perm_null": 0.5143338984014021
+   },
+   "Reno-Sparks Indian Colony": {
+    "n": 261,
+    "n_docs": 2,
+    "domains": [
+     "criminal"
+    ],
+    "degenerate_f1": 0.3618581907090465,
+    "M0": 0.9572112016930712,
+    "M2": 0.9572112016930712,
+    "perm_null": 0.5001217311126273
+   },
+   "Sac & Fox Nation": {
+    "n": 59,
+    "n_docs": 2,
+    "domains": [
+     "civil"
+    ],
+    "degenerate_f1": 0.3655913978494624,
+    "M0": 0.9652941176470589,
+    "M2": 0.9652941176470589,
+    "perm_null": 0.5162131291108283
+   },
+   "Salt River Pima-Maricopa Indian Community": {
+    "n": 155,
+    "n_docs": 2,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.40839694656488545,
+    "M0": 0.9924112607099143,
+    "M2": 1.0,
+    "perm_null": 0.5476060378340317
+   },
+   "Wyandotte Nation": {
+    "n": 570,
+    "n_docs": 3,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.2641242937853107,
+    "M0": 0.9094433175569079,
+    "M2": 0.9083938600444504,
+    "perm_null": 0.3407011597375147
+   },
+   "Zuni Tribe": {
+    "n": 147,
+    "n_docs": 2,
+    "domains": [
+     "civil",
+     "criminal"
+    ],
+    "degenerate_f1": 0.45353159851301117,
+    "M0": 0.4,
+    "M2": 0.3950617283950617,
+    "perm_null": 0.5355784500499112
+   }
+  },
+  "n_nations": 12,
+  "mean_M0": 0.8582086220661655,
+  "mean_M2": 0.8635405883776927,
+  "same_domain_mean": 0.7900967647662468,
+  "at_or_below_degenerate": [
+   "Ponca Tribe of Nebraska",
+   "Zuni Tribe"
+  ],
+  "above_null": [
+   "Crow Tribe of Montana",
+   "Dry Creek Rancheria Band of Pomo Indians",
+   "Ho-Chunk Nation of Wisconsin",
+   "Hoh Indian Tribe",
+   "Iowa Tribe of Oklahoma",
+   "Nez Perce Tribe",
+   "Reno-Sparks Indian Colony",
+   "Sac & Fox Nation",
+   "Salt River Pima-Maricopa Indian Community",
+   "Wyandotte Nation"
+  ]
+ },
+ "dose_assumptions": {
+  "legal domain": [
+   {
+    "m": 2,
+    "doc_overlaps": 0,
+    "theil_u": 1.0
+   },
+   {
+    "m": 3,
+    "doc_overlaps": 0,
+    "theil_u": 1.0
+   },
+   {
+    "m": 5,
+    "doc_overlaps": 0,
+    "theil_u": 0.9894308374794983
+   },
+   {
+    "m": 10,
+    "doc_overlaps": 0,
+    "theil_u": 0.9801124563013625
+   },
+   {
+    "m": 20,
+    "doc_overlaps": 0,
+    "theil_u": 0.9704162713980112
+   }
+  ],
+  "deontic modality": [
+   {
+    "m": 2,
+    "doc_overlaps": 0,
+    "theil_u": 0.7710888010320345
+   },
+   {
+    "m": 3,
+    "doc_overlaps": 0,
+    "theil_u": 0.8414707992724939
+   },
+   {
+    "m": 5,
+    "doc_overlaps": 0,
+    "theil_u": 0.7301352091513804
+   },
+   {
+    "m": 10,
+    "doc_overlaps": 0,
+    "theil_u": 0.7205136178802583
+   },
+   {
+    "m": 20,
+    "doc_overlaps": 0,
+    "theil_u": 0.6211934789867184
+   }
+  ]
+ },
+ "divergence_floor": {
+  "log_base": 2,
+  "arms": {
+   "modality_1 | Oklahoma cluster removed | criminal": {
+    "cell": 29,
+    "n_provisions": 544,
+    "n_classes": 4,
+    "measured": 0.09227353435748435,
+    "floor_mean": 0.04044025047206798,
+    "floor_p95": 0.10850374752611741,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.07918416316736653
+   },
+   "modality_1 | Oklahoma cluster removed | civil": {
+    "cell": 29,
+    "n_provisions": 354,
+    "n_classes": 4,
+    "measured": 0.04991888981525861,
+    "floor_mean": 0.04118394227253555,
+    "floor_p95": 0.10367196929666232,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.3151369726054789
+   },
+   "modality_1 | all provisions | criminal": {
+    "cell": 27,
+    "n_provisions": 1121,
+    "n_classes": 4,
+    "measured": 0.17842725184165,
+    "floor_mean": 0.043850335236026466,
+    "floor_p95": 0.11320100112159893,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.008598280343931213
+   },
+   "modality_1 | all provisions | civil": {
+    "cell": 27,
+    "n_provisions": 1456,
+    "n_classes": 4,
+    "measured": 0.047115490632508875,
+    "floor_mean": 0.04529330134841444,
+    "floor_p95": 0.11216062908219582,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.3903219356128774
+   },
+   "modality_1 | near-duplicates removed | criminal": {
+    "cell": 29,
+    "n_provisions": 1032,
+    "n_classes": 4,
+    "measured": 0.16950187857906027,
+    "floor_mean": 0.04018810416772096,
+    "floor_p95": 0.1051971947310532,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.004199160167966407
+   },
+   "modality_1 | near-duplicates removed | civil": {
+    "cell": 29,
+    "n_provisions": 1429,
+    "n_classes": 4,
+    "measured": 0.04634149447261829,
+    "floor_mean": 0.041830176869184256,
+    "floor_p95": 0.10537386802582184,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.35552889422115574
+   },
+   "silver | Oklahoma cluster removed | criminal": {
+    "cell": 29,
+    "n_provisions": 544,
+    "n_classes": 8,
+    "measured": 0.19103569434992443,
+    "floor_mean": 0.10174909841662157,
+    "floor_p95": 0.19093974332218372,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.05018996200759848
+   },
+   "silver | Oklahoma cluster removed | civil": {
+    "cell": 29,
+    "n_provisions": 354,
+    "n_classes": 8,
+    "measured": 0.10057924402997667,
+    "floor_mean": 0.10158606905055614,
+    "floor_p95": 0.19528310539353055,
+    "at_or_below_floor": true,
+    "p_one_sided": 0.4533093381323735
+   },
+   "silver | all provisions | criminal": {
+    "cell": 27,
+    "n_provisions": 1121,
+    "n_classes": 8,
+    "measured": 0.15384877608603859,
+    "floor_mean": 0.10700487087091932,
+    "floor_p95": 0.19768773750422008,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.16196760647870426
+   },
+   "silver | all provisions | civil": {
+    "cell": 27,
+    "n_provisions": 1456,
+    "n_classes": 8,
+    "measured": 0.0936070742307937,
+    "floor_mean": 0.10551422791792815,
+    "floor_p95": 0.20476147848520423,
+    "at_or_below_floor": true,
+    "p_one_sided": 0.5270945810837833
+   },
+   "silver | near-duplicates removed | criminal": {
+    "cell": 29,
+    "n_provisions": 1032,
+    "n_classes": 8,
+    "measured": 0.16306973000545508,
+    "floor_mean": 0.09919064504594031,
+    "floor_p95": 0.18586224443872895,
+    "at_or_below_floor": false,
+    "p_one_sided": 0.09938012397520496
+   },
+   "silver | near-duplicates removed | civil": {
+    "cell": 29,
+    "n_provisions": 1429,
+    "n_classes": 8,
+    "measured": 0.09205600818528606,
+    "floor_mean": 0.09828824681707635,
+    "floor_p95": 0.18883478311720117,
+    "at_or_below_floor": true,
+    "p_one_sided": 0.4907018596280744
+   }
+  }
+ },
+ "no_oklahoma": {
+  "all": {
+   "n": 2840,
+   "n_nations": 15,
+   "n_docs": 80,
+   "random_f1": 0.7005734130059801,
+   "doc_heldout_f1": 0.1394233977271799,
+   "ratio": 5.0247908487845345
+  },
+  "no_oklahoma": {
+   "n": 1765,
+   "n_nations": 12,
+   "n_docs": 32,
+   "random_f1": 0.7690647217692436,
+   "doc_heldout_f1": 0.1803099487598174,
+   "ratio": 4.265237315294673
+  },
+  "no_near_duplicates": {
+   "n": 2732,
+   "n_nations": 15,
+   "n_docs": 80,
+   "random_f1": 0.7276981209847649,
+   "doc_heldout_f1": 0.1431305708345659,
+   "ratio": 5.084155793844054
+  }
+ },
+ "sibling_confusion": {
+  "all": {
+   "n": 2840,
+   "n_nations": 15,
+   "majority_nation": "Wyandotte Nation",
+   "majority_acc": 0.2007042253521127,
+   "random_acc": 0.6626760563380282,
+   "heldout_acc": 0.14859154929577464,
+   "heldout_macro_f1": 0.1394233977271799,
+   "heldout_acc_unweighted": 0.13133802816901408,
+   "cluster_nations": [
+    "Iowa Tribe of Oklahoma",
+    "Sac & Fox Nation",
+    "Wyandotte Nation"
+   ],
+   "majority_errors": 543,
+   "majority_errors_to_cluster": 0.8858195211786372,
+   "chance_to_cluster": 0.14285714285714285,
+   "cluster_errors_stay_in_cluster": 0.821505376344086
+  },
+  "no_oklahoma": {
+   "n": 1765,
+   "n_nations": 12,
+   "majority_nation": "Reno-Sparks Indian Colony",
+   "majority_acc": 0.14787535410764874,
+   "random_acc": 0.7682719546742209,
+   "heldout_acc": 0.20113314447592068,
+   "heldout_macro_f1": 0.1803099487598174
+  },
+  "no_near_duplicates": {
+   "n": 2732,
+   "n_nations": 15,
+   "majority_nation": "Wyandotte Nation",
+   "majority_acc": 0.1767935578330893,
+   "random_acc": 0.7035139092240117,
+   "heldout_acc": 0.16105417276720352,
+   "heldout_macro_f1": 0.1431305708345659
+  }
+ },
+ "fingerprint_association": {
+  "n_nations": 12,
+  "rho_finger_vs_drop": 0.6083916083916086,
+  "p": 0.03974801259937003,
+  "leave_one_out": {
+   "Ponca Tribe of Nebraska": {
+    "rho": 0.4909090909090909,
+    "p": 0.12649367531623418,
+    "n_nations": 11
+   },
+   "Zuni Tribe": {
+    "rho": 0.5454545454545455,
+    "p": 0.08509574521273937,
+    "n_nations": 11
+   }
+  },
+  "within_label": {
+   "n_nations": 15,
+   "rho_docs_vs_drop": 0.026891271741361893,
+   "p": 0.9333533323333834,
+   "n_docs_total": 80,
+   "n_at_three_or_fewer": 12,
+   "drop_lo_min": 0.008948214065010562,
+   "drop_lo_max": 0.8811188811188811,
+   "drop_lo_min_excl_floor": 0.3523729052246163,
+   "drop_lo_median": 0.6608558582306261,
+   "top_nation": "Sac & Fox Nation",
+   "top_docs": 42,
+   "top_drop": 0.21465338913744167
+  }
+ }
+}
