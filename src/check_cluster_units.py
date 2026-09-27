@@ -21,6 +21,7 @@ from exp_template_adoption import borrowed, genre, OK_CLUSTER
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 BOOT, PERM, SEED, K = 2000, 20000, 20260101, 4
+SLOPE_BOOT = 5000
 MACRO = lambda a, b: f1_score(a, b, average="macro", zero_division=0)
 
 
@@ -93,13 +94,23 @@ def block_slope(curve_draws, label, out):
     for p in itertools.permutations(range(len(ms))):
         null.append(np.polyfit(x, np.concatenate([blocks[i] for i in p]), 1)[0])
     null = np.array(null)
+    rng = np.random.default_rng(SEED)
+    boot = []
+    for _ in range(SLOPE_BOOT):
+        r = [b[rng.integers(0, len(b), len(b))] for b in blocks]
+        boot.append(np.polyfit(x, np.concatenate(r), 1)[0])
     out[label] = {"levels": ms, "draws_per_level": [len(curve_draws[m]) for m in ms],
                   "slope": slope, "n_perm": len(null),
                   "p_block": float(np.mean(np.abs(null) >= abs(slope) - 1e-12)),
                   "p_floor": float(1.0 / len(null)),
+                  "slope_ci": [float(np.percentile(boot, 2.5)),
+                               float(np.percentile(boot, 97.5))],
+                  "slope_boot": SLOPE_BOOT,
                   "level_means": [float(np.mean(np.exp(b))) for b in blocks]}
-    print(f"{label}: slope {slope:+.3f}  block permutation p = {out[label]['p_block']:.4g} "
-          f"over {len(null)} level orderings (floor {out[label]['p_floor']:.4g})")
+    ci = out[label]["slope_ci"]
+    print(f"{label}: slope {slope:+.3f} [{ci[0]:+.3f}, {ci[1]:+.3f}]  block permutation "
+          f"p = {out[label]['p_block']:.4g} over {len(null)} level orderings "
+          f"(floor {out[label]['p_floor']:.4g})")
 
 
 def adoption_nation(out):
@@ -177,8 +188,16 @@ def main():
     for lab, v in d.items():
         block_slope({p["m"]: p["ratio_draws"] for p in v["curve"]}, lab, dose)
     sc = json.load(open(ROOT / "results/statecode_dose.json"))
-    block_slope({p["k"]: p.get("ratio_draws") or [p["ratio"]] for p in sc["fixed_n"]},
+    # below this dose a state can fall out of a training fold, so the ratio is inflated by a
+    # missing class rather than by low diversity; the reported slope uses the covered levels
+    keep = [p for p in sc["fixed_n"] if p["unseen_classes_group"] < 0.5]
+    block_slope({p["k"]: p.get("ratio_draws") or [p["ratio"]] for p in keep},
                 "state codes", dose)
+    block_slope({p["k"]: p.get("ratio_draws") or [p["ratio"]] for p in sc["fixed_n"]},
+                "state codes (all levels)", dose)
+    strict = [p for p in sc["fixed_n"] if p["unseen_classes_group"] <= 0.0]
+    block_slope({p["k"]: p.get("ratio_draws") or [p["ratio"]] for p in strict},
+                "state codes (strict)", dose)
     out["dose_block"] = dose
 
     docprobe_nation(out)

@@ -1,18 +1,19 @@
 """Replicate the split-ladder probe on a public multi-jurisdiction statute corpus.
 
-Jurisdiction identity comes from the record grouping in the source file, never from the
-text, so the probe cannot be recovering a text-derived labelling rule.
+A record is assigned to a state by which state name dominates it, and those names are then
+masked before vectorization. The label is therefore derived from a signal the probe never
+sees, which is what rules out a circular labelling rule; it is not independent of the text.
 """
 import collections, json, lzma, re, pathlib, time, urllib.request
 
+OUT = pathlib.Path(__file__).resolve().parents[1] / "results"
+OUT.mkdir(parents=True, exist_ok=True)
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
 from sklearn.metrics import f1_score
 
-OUT = pathlib.Path(__file__).resolve().parents[1] / "results"
-OUT.mkdir(parents=True, exist_ok=True)
 SEED = 20260101
 URL = ("https://huggingface.co/datasets/pile-of-law/pile-of-law/resolve/main/"
        "data/validation.state_code.jsonl.xz")
@@ -82,16 +83,16 @@ def segment(text):
     return out
 
 
-def probe(X, y, groups, mode, rng, cap=None):
+def probe(X, y, groups, mode, rng, cap=None, nf=4):
     """Macro-F1 for predicting y, splitting either at random or by group."""
     idx = np.arange(len(y))
     if mode == "random":
         rng.shuffle(idx)
-        folds = np.array_split(idx, 4)
+        folds = np.array_split(idx, nf)
     else:
         gs = sorted(set(groups))
         rng.shuffle(gs)
-        chunks = [set(c) for c in np.array_split(np.array(gs, dtype=object), 4)]
+        chunks = [set(c) for c in np.array_split(np.array(gs, dtype=object), nf)]
         folds = [np.array([i for i in idx if groups[i] in c]) for c in chunks]
     scores = []
     for f in folds:
@@ -114,12 +115,17 @@ def probe(X, y, groups, mode, rng, cap=None):
              float(np.mean([s[2] for s in scores]))] if scores else [float("nan")] * 3)
 
 
-KS = [2, 5, 10, 20, 40]     # documents per state on the dose-response curve
+KS = [2, 3, 4, 6, 10, 16, 25, 40]   # documents per state on the dose-response curve
 MINSEC = 30                 # a document must carry this many usable sections
 TARGET = 2 * MINSEC         # sections per state, identical at every k
 MIN_DOCS = max(KS)
-REPEATS = 3                 # subsample draws averaged at each k
+REPEATS = 10                # subsample draws averaged at each k
 N_PERM = 5
+
+
+def nfolds(k):
+    """At k documents per state a fold count above k would empty some state's training set."""
+    return min(4, k)
 DEADLINE = 9 * 3600
 
 
@@ -152,19 +158,44 @@ def subsample(pool, k, rng, total=None):
     return out
 
 
-def run_point(sub, rng, perm=False):
+def theil_u(y, g):
+    """Share of label entropy the source document resolves, minus its value under permutation."""
+    def u(lab):
+        n = len(lab)
+        cy = collections.Counter(lab)
+        hy = -sum(c / n * np.log(c / n) for c in cy.values())
+        if hy <= 0:
+            return 0.0
+        cond = collections.defaultdict(collections.Counter)
+        for a, b in zip(g, lab):
+            cond[a][b] += 1
+        hyx = 0.0
+        for a, c in cond.items():
+            m = sum(c.values())
+            hyx += m / n * -sum(v / m * np.log(v / m) for v in c.values())
+        return (hy - hyx) / hy
+    obs = u(y)
+    rng = np.random.default_rng(7)
+    null = float(np.mean([u(list(rng.permutation(y))) for _ in range(20)]))
+    return float(obs), float((obs - null) / (1 - null)) if null < 1 else float(obs)
+
+
+def run_point(sub, rng, k, perm=False):
     """Random vs document-held-out on one subsample, with state names masked."""
     X = [mask(t, 1) for _, _, t in sub]
     y = [st for st, _, _ in sub]
     g = [d for _, d, _ in sub]
-    a = probe(X, y, g, "random", rng)
-    b = probe(X, y, g, "group", rng)
-    row = {"n_sections": len(sub), "n_docs": len(set(g)),
+    nf = nfolds(k)
+    a = probe(X, y, g, "random", rng, nf=nf)
+    b = probe(X, y, g, "group", rng, nf=nf)
+    uraw, uadj = theil_u(y, g)
+    row = {"n_sections": len(sub), "n_docs": len(set(g)), "n_folds": nf,
            "random_f1": a[0], "doc_heldout_f1": b[0],
            "ratio": a[0] / b[0] if b[0] else None,
+           "theil_u": uraw, "theil_u_adj": uadj,
            "unseen_classes_group": b[2]}
     if perm:
-        q = [probe(X, list(rng.permutation(y)), g, "group", rng)[0] for _ in range(N_PERM)]
+        q = [probe(X, list(rng.permutation(y)), g, "group", rng, nf=nf)[0] for _ in range(N_PERM)]
         row["perm_null_f1"] = float(np.mean(q))
         row["perm_null_sd"] = float(np.std(q))
     return row
@@ -198,9 +229,10 @@ def main():
         print("pool too small; stopping", flush=True)
         return
 
-    out = {"seed": SEED, "target_sections_per_state": TARGET, "min_sections_per_doc": MINSEC,
+    out = {"seed": SEED, "sections_per_state": TARGET, "min_sections_per_doc": MINSEC,
            "min_docs": MIN_DOCS, "repeats": REPEATS, "masking": "state names and demonyms",
-           "states": sorted(pool), "fixed_n": []}
+           "label_source": "dominant state name in the record, masked before vectorization",
+           "dose_levels": KS, "states": sorted(pool), "fixed_n": []}
 
     def save():
         json.dump(out, open(OUT / "statecode_dose.json", "w"), indent=1)
@@ -209,9 +241,13 @@ def main():
     for k in KS:
         if time.time() - T0 > DEADLINE:
             break
-        reps = [run_point(subsample(pool, k, rng, TARGET), rng, perm=(r == 0))
+        reps = [run_point(subsample(pool, k, rng, TARGET), rng, k, perm=(r == 0))
                 for r in range(REPEATS)]
+        draws = [r["ratio"] for r in reps if r["ratio"]]
         row = {"k": k, "n_sections": reps[0]["n_sections"], "n_states": len(pool),
+               "n_folds": reps[0]["n_folds"], "ratio_draws": draws,
+               "ratio_mean": float(np.mean(draws)), "repeats": len(reps),
+               "theil_u_adj": float(np.mean([r["theil_u_adj"] for r in reps])),
                "random_f1": float(np.mean([r["random_f1"] for r in reps])),
                "doc_heldout_f1": float(np.mean([r["doc_heldout_f1"] for r in reps])),
                "random_sd": float(np.std([r["random_f1"] for r in reps])),
