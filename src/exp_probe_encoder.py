@@ -28,7 +28,7 @@ def run(rows, y, folds, labels, sizes, rng):
               flush=True)
     a = bootstrap_ci(accuracy_score, y, preds)
     fl = bootstrap_ci(lambda p, q: f1_score(p, q, average="macro", zero_division=0), y, preds)
-    return {"accuracy": a, "macro_f1": fl}
+    return {"accuracy": a, "macro_f1": fl, "pred": [str(v) for v in preds]}
 
 
 def main():
@@ -57,6 +57,7 @@ def main():
               f"macroF1 {r['macro_f1'][0]:.3f} "
               f"[{r['macro_f1'][1]:.3f},{r['macro_f1'][2]:.3f}]", flush=True)
     out["model"] = MODEL
+    out["unit"] = {"nation": [str(v) for v in y], "doc_id": [r["doc_id"] for r in rows]}
     json.dump(out, open(ROOT / "results/probe_encoder.json", "w"), indent=1)
 
 
