@@ -43,11 +43,15 @@ python src/exp_template_adoption.py # borrowed drafting on each side of the corp
 python src/check_probe_cluster.py  # the probe interval at document and Nation level
 python src/check_encoder_units.py  # the encoder contrast at the same units
 python src/check_cluster_units.py  # every central contrast, resampled at three units
+python src/check_review.py         # the criterion and the diagnostic attacked directly
 python src/exp_statecode.py        # the same dose-response in United States state codes
+python src/exp_llm_regimes.py      # scores an instruction-following model in both regimes
 ```
 
 `exp_statecode.py` is the only script that reads data from outside the repository: it
-streams the state-code shard of Pile of Law and segments it locally.
+streams the state-code shard of Pile of Law and segments it locally. `exp_llm_regimes.py`
+scores generations produced outside this repository, so it needs the reply package the run
+wrote; without it the other scripts are unaffected.
 
 Every experiment is seeded from `SEED` in `src/data.py`. Confidence intervals resample Nations
 rather than provisions, because provisions from one Nation are not independent. Significance
