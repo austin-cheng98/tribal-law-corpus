@@ -1057,11 +1057,435 @@
     "minseg": 30,
     "minw": 25,
     "maxw": 400,
-    "per_value": 60
+    "per_value": 45
    },
-   "fixed_n": [],
-   "doc_counts": [],
-   "error": "no dose level keeps 4 label values"
+   "fixed_n": [
+    {
+     "k": 2,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 2,
+     "ratio_draws": [
+      7.06323908580896,
+      22.10959174239358,
+      4.554778931290444,
+      7.087453287322793,
+      6.6596336784074435,
+      10.703587087243175,
+      15.10239556843572,
+      6.000503694901896,
+      7.989558224214661,
+      4.297954217686936
+     ],
+     "ratio_mean": 9.15686955177056,
+     "repeats": 10,
+     "random_f1": 0.523520452824669,
+     "doc_heldout_f1": 0.07215603388873974,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 5.7,
+     "perm_null_f1": 0.042649082989954276,
+     "ratio": 7.255393965138189
+    },
+    {
+     "k": 3,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 3,
+     "ratio_draws": [
+      5.317916025515041,
+      3.5282164398478484,
+      5.709350669562631,
+      4.376849836298569,
+      7.842989602164121,
+      5.328079134937802,
+      5.298806071889022,
+      4.267660824267954,
+      5.7358130354474115,
+      6.306669525784414
+     ],
+     "ratio_mean": 5.371235116571482,
+     "repeats": 10,
+     "random_f1": 0.5052603414282238,
+     "doc_heldout_f1": 0.09829176936155928,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 0.9333333333333332,
+     "perm_null_f1": 0.05163482183773096,
+     "ratio": 5.140413533198895
+    },
+    {
+     "k": 4,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 4,
+     "ratio_draws": [
+      5.032808069586118,
+      3.2657570330827057,
+      3.9117612665966317,
+      3.6378379855138614,
+      4.0994173526044,
+      3.334272262464533,
+      3.30153035960244,
+      3.279809223909793,
+      2.9348172648945785,
+      3.6241724035374867
+     ],
+     "ratio_mean": 3.6422183221792546,
+     "repeats": 10,
+     "random_f1": 0.4733481196124842,
+     "doc_heldout_f1": 0.13296233187759912,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 0.025,
+     "perm_null_f1": 0.04994268054470743,
+     "ratio": 3.560016682380641
+    },
+    {
+     "k": 6,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 4,
+     "ratio_draws": [
+      2.8019816121597927,
+      2.4034349338899132,
+      2.9899831020818737,
+      2.5593262184772856,
+      2.84236452673483,
+      2.590729286588984,
+      2.641100288823491,
+      2.147517031144808,
+      2.794933431014649,
+      2.2032249756619513
+     ],
+     "ratio_mean": 2.597459540657758,
+     "repeats": 10,
+     "random_f1": 0.398442942076569,
+     "doc_heldout_f1": 0.15514747912559584,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 0.0,
+     "perm_null_f1": 0.04862447197772426,
+     "ratio": 2.568156081698364
+    },
+    {
+     "k": 10,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 4,
+     "ratio_draws": [
+      1.8193071581655735,
+      1.6243469073727348,
+      1.833837388844698,
+      1.8367658237229993,
+      1.679671337523472,
+      1.6814205076081996,
+      2.0479084822212688,
+      2.2093157966478527,
+      1.9732634977516585,
+      1.7247306935661542
+     ],
+     "ratio_mean": 1.8430567593424612,
+     "repeats": 10,
+     "random_f1": 0.3393410152957467,
+     "doc_heldout_f1": 0.18553122506523478,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 0.0,
+     "perm_null_f1": 0.045328756021568384,
+     "ratio": 1.8290237407553942
+    },
+    {
+     "k": 16,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 4,
+     "ratio_draws": [
+      1.5137494594316205,
+      1.4659438071218391,
+      1.4790488316012826,
+      1.4858035807457528,
+      1.6909203449725165,
+      1.2794724256434942,
+      1.4438987083792096,
+      1.501780213197711,
+      1.4352800139402462,
+      1.3746149378966341
+     ],
+     "ratio_mean": 1.4670512322930307,
+     "repeats": 10,
+     "random_f1": 0.3033954342643906,
+     "doc_heldout_f1": 0.20743827964660505,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 0.0,
+     "perm_null_f1": 0.04824093963292418,
+     "ratio": 1.4625817124074667
+    },
+    {
+     "k": 25,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 4,
+     "ratio_draws": [
+      1.202219721718347,
+      1.2309803472806984,
+      1.2073792858443706,
+      1.321612400837085,
+      1.3065111318414546,
+      1.247311637023684,
+      1.3415841015170298,
+      1.2311270822000584,
+      1.3052506189532929,
+      1.2755552849331222
+     ],
+     "ratio_mean": 1.2669531612149143,
+     "repeats": 10,
+     "random_f1": 0.27814780596465677,
+     "doc_heldout_f1": 0.21954546628784305,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 0.0,
+     "perm_null_f1": 0.04937961950723552,
+     "ratio": 1.2669257565081349
+    },
+    {
+     "k": 40,
+     "n_passages": 1200,
+     "n_values": 20,
+     "n_folds": 4,
+     "ratio_draws": [
+      1.196903366997739,
+      1.1470767580087402,
+      1.1514521960846542,
+      1.1724211581798156,
+      1.1360878710131654,
+      1.1405183535113366,
+      1.1049914379604555,
+      1.12976533787089,
+      1.197916143742728,
+      1.2652796803057103
+     ],
+     "ratio_mean": 1.1642412303675234,
+     "repeats": 10,
+     "random_f1": 0.2639387313724554,
+     "doc_heldout_f1": 0.22707050174242166,
+     "theil_u_adj": 1.0,
+     "unseen_classes_group": 0.0,
+     "perm_null_f1": 0.04596648097527645,
+     "ratio": 1.1623646812207045
+    }
+   ],
+   "doc_counts": [
+    [
+     "Yonge, Charlotte M. (Charlotte Mary), 1823-1901",
+     45
+    ],
+    [
+     "Wells, H. G. (Herbert George), 1866-1946",
+     45
+    ],
+    [
+     "Various; Seaman, Owen, 1861-1936 [Editor]",
+     45
+    ],
+    [
+     "Various; Graham, George R., 1813-1894 [Editor]",
+     45
+    ],
+    [
+     "Various; Chambers, Robert, 1802-1871 [Editor]; Chambers, William, 1800-1883 [Editor]",
+     45
+    ],
+    [
+     "Various; Burnand, F. C. (Francis Cowley), 1836-1917 [Editor]",
+     45
+    ],
+    [
+     "Various; Bell, George, 1814-1890 [Editor]",
+     45
+    ],
+    [
+     "Unknown",
+     45
+    ],
+    [
+     "Twain, Mark, 1835-1910",
+     45
+    ],
+    [
+     "Trollope, Anthony, 1815-1882",
+     45
+    ],
+    [
+     "Standish, Burt L., 1866-1945",
+     45
+    ],
+    [
+     "Scott, Walter, 1771-1832",
+     45
+    ],
+    [
+     "Ruskin, John, 1819-1900",
+     45
+    ],
+    [
+     "Optic, Oliver, 1822-1897",
+     45
+    ],
+    [
+     "Oliphant, Mrs. (Margaret), 1828-1897",
+     45
+    ],
+    [
+     "Meade, L. T., 1854-1914",
+     45
+    ],
+    [
+     "Le Queux, William, 1864-1927",
+     45
+    ],
+    [
+     "Lang, Andrew, 1844-1912",
+     45
+    ],
+    [
+     "Kingston, William Henry Giles, 1814-1880",
+     45
+    ],
+    [
+     "James, Henry, 1843-1916",
+     45
+    ],
+    [
+     "Jacobs, W. W. (William Wymark), 1863-1943",
+     45
+    ],
+    [
+     "Hume, Fergus, 1859-1932",
+     45
+    ],
+    [
+     "Howells, William Dean, 1837-1920",
+     45
+    ],
+    [
+     "Henty, G. A. (George Alfred), 1832-1902",
+     45
+    ],
+    [
+     "Hawthorne, Nathaniel, 1804-1864",
+     45
+    ],
+    [
+     "Harte, Bret, 1836-1902",
+     45
+    ],
+    [
+     "Haggard, H. Rider (Henry Rider), 1856-1925",
+     45
+    ],
+    [
+     "Grant, James, 1822-1887",
+     45
+    ],
+    [
+     "Fenn, George Manville, 1831-1909",
+     45
+    ],
+    [
+     "Ellis, Edward Sylvester, 1840-1916",
+     45
+    ],
+    [
+     "Doyle, Arthur Conan, 1859-1930",
+     45
+    ],
+    [
+     "Dickens, Charles, 1812-1870",
+     45
+    ],
+    [
+     "Chesterton, G. K. (Gilbert Keith), 1874-1936",
+     45
+    ],
+    [
+     "Ballantyne, R. M. (Robert Michael), 1825-1894",
+     45
+    ],
+    [
+     "Alger, Horatio, Jr., 1832-1899",
+     45
+    ],
+    [
+     "Abbott, Jacob, 1803-1879",
+     45
+    ],
+    [
+     "Stevenson, Robert Louis, 1850-1894",
+     44
+    ],
+    [
+     "James, G. P. R. (George Payne Rainsford), 1801?-1860",
+     44
+    ],
+    [
+     "Kipling, Rudyard, 1865-1936",
+     43
+    ],
+    [
+     "Huxley, Thomas Henry, 1825-1895",
+     43
+    ]
+   ],
+   "n_values": 20,
+   "values": [
+    "James, Henry, 1843-1916",
+    "Kingston, William Henry Giles, 1814-1880",
+    "Lang, Andrew, 1844-1912",
+    "Le Queux, William, 1864-1927",
+    "Meade, L. T., 1854-1914",
+    "Oliphant, Mrs. (Margaret), 1828-1897",
+    "Optic, Oliver, 1822-1897",
+    "Ruskin, John, 1819-1900",
+    "Scott, Walter, 1771-1832",
+    "Standish, Burt L., 1866-1945",
+    "Trollope, Anthony, 1815-1882",
+    "Twain, Mark, 1835-1910",
+    "Unknown",
+    "Various; Bell, George, 1814-1890 [Editor]",
+    "Various; Burnand, F. C. (Francis Cowley), 1836-1917 [Editor]",
+    "Various; Chambers, Robert, 1802-1871 [Editor]; Chambers, William, 1800-1883 [Editor]",
+    "Various; Graham, George R., 1813-1894 [Editor]",
+    "Various; Seaman, Owen, 1861-1936 [Editor]",
+    "Wells, H. G. (Herbert George), 1866-1946",
+    "Yonge, Charlotte M. (Charlotte Mary), 1823-1901"
+   ],
+   "dose_levels_run": [
+    2,
+    3,
+    4,
+    6,
+    10,
+    16,
+    25,
+    40
+   ],
+   "docs_available": [
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45
+   ]
   }
  }
 }
