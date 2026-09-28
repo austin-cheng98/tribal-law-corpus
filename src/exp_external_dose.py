@@ -316,7 +316,7 @@ CORPORA = [
     ("patent_classes", "IPC section", "patent", "paragraph", load_patent,
      dict(minseg=30, minw=25, maxw=400, per_value=90)),
     ("gutenberg_authors", "author", "book", "paragraph", load_gutenberg,
-     dict(minseg=30, minw=25, maxw=400, per_value=60)),
+     dict(minseg=30, minw=25, maxw=400, per_value=45)),
     ("news_outlets", "publishing outlet", "article", "paragraph", load_news,
      dict(minseg=12, minw=15, maxw=400, per_value=90)),
 ]
